@@ -3,15 +3,26 @@ import { Search, BookOpen, GraduationCap, Award, Plane, ArrowRight } from "lucid
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SearchBar } from "@/components/SearchBar";
-import { CategoryCard } from "@/components/CategoryCard";
 import { StatCard } from "@/components/StatCard";
+import { CaptainReezzOverlay } from "@/components/CaptainReezzOverlay";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { categories, questionSources } from "@/data/categories";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useQuery } from "@tanstack/react-query";
+import { getAllTopicsWithCounts, mapTopicToApp } from "@/services/categoryService";
 
 const Index = () => {
+  const { data: topicsData, isLoading } = useQuery({
+    queryKey: ['allTopicsWithCounts'],
+    queryFn: () => getAllTopicsWithCounts(),
+  });
+
+  const topics = (topicsData?.data || [])
+    .map((topic) => mapTopicToApp(topic, topic.question_count));
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      <CaptainReezzOverlay />
       <Navbar />
       
       <main className="flex-1">
@@ -43,11 +54,6 @@ const Index = () => {
                 <Link to="/practice">
                   <Button size="lg" className="gap-2 text-lg px-8">
                     Start Practice Test <ArrowRight className="h-5 w-5" />
-                  </Button>
-                </Link>
-                <Link to="/category/instruments">
-                  <Button size="lg" variant="outline" className="gap-2 text-lg px-8">
-                    Browse Questions
                   </Button>
                 </Link>
               </div>
@@ -87,48 +93,58 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Categories Section */}
+        {/* Topics Section */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Browse by Subject</h2>
+              <h2 className="text-3xl font-bold mb-4">Browse by Questions</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Select a subject to start practicing. Each category contains questions 
+                Select a topic to start practicing. Each topic contains questions 
                 specific to DGCA examination syllabus.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {categories.map((category) => (
-                <CategoryCard key={category.id} category={category} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Question Sources Section */}
-        <section className="py-16 lg:py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Question Sources</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Practice with questions from multiple trusted sources used by 
-                airlines and training organizations.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-              {questionSources.map((source) => (
-                <Link key={source.id} to={`/source/${source.id}`}>
-                  <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 hover:border-primary/50">
+            {isLoading ? (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <Card key={i}>
                     <CardContent className="p-6">
-                      <h3 className="font-semibold text-lg mb-2">{source.name}</h3>
-                      <p className="text-sm text-muted-foreground">{source.description}</p>
+                      <Skeleton className="h-6 w-32 mb-2" />
+                      <Skeleton className="h-4 w-full mb-2" />
+                      <Skeleton className="h-4 w-24" />
                     </CardContent>
                   </Card>
-                </Link>
-              ))}
-            </div>
+                ))}
+              </div>
+            ) : topics.length > 0 ? (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {topics.map((topic) => (
+                  <Link key={topic.id} to={`/topic/${topic.id}`}>
+                    <Card className="group h-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 hover:border-primary/50">
+                      <CardContent className="p-6">
+                        <div className="space-y-2">
+                          <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+                            {topic.name}
+                          </h3>
+                          {topic.description && (
+                            <p className="text-sm text-muted-foreground line-clamp-2">
+                              {topic.description}
+                            </p>
+                          )}
+                          <p className="text-xs text-primary font-medium pt-1">
+                            {topic.questionCount}+ questions
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-muted-foreground">No topics available yet.</p>
+              </div>
+            )}
           </div>
         </section>
 
@@ -148,11 +164,6 @@ const Index = () => {
                   <Link to="/practice">
                     <Button size="lg" variant="secondary" className="gap-2 text-lg px-8">
                       Start Free Practice <ArrowRight className="h-5 w-5" />
-                    </Button>
-                  </Link>
-                  <Link to="/login">
-                    <Button size="lg" variant="outline" className="gap-2 text-lg px-8 border-white/30 text-white hover:bg-white/10">
-                      Create Account
                     </Button>
                   </Link>
                 </div>

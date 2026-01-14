@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { useSearchParams, Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import { ArrowLeft, Play, Clock, HelpCircle, Settings2 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -16,45 +17,156 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
-import { categories } from "@/data/categories";
-import { sampleQuestions, getRandomQuestions } from "@/data/sampleQuestions";
+import { useAuth } from "@/contexts/AuthContext";
+import { saveTestResult } from "@/services/testService";
+import { useToast } from "@/hooks/use-toast";
+import { getCategoriesWithPaths, CategoryWithPath } from "@/services/categoryService";
+import { getQuestionsByCategory, getAllQuestions, mapQuestionToApp } from "@/services/questionService";
+import { Question } from "@/types/questions";
 
 const PracticePage = () => {
   const [searchParams] = useSearchParams();
   const preselectedCategory = searchParams.get("category");
   const preselectedSource = searchParams.get("source");
+  const { user } = useAuth();
+  const { toast } = useToast();
 
   const [selectedCategory, setSelectedCategory] = useState(preselectedCategory || "all");
   const [questionCount, setQuestionCount] = useState(10);
   const [timeLimit, setTimeLimit] = useState(15);
   const [testStarted, setTestStarted] = useState(false);
   const [testResults, setTestResults] = useState<TestResults | null>(null);
-  const [testQuestions, setTestQuestions] = useState<typeof sampleQuestions>([]);
+  const [testQuestions, setTestQuestions] = useState<Question[]>([]);
+  const [savingResult, setSavingResult] = useState(false);
+
+  // Fetch categories from DB with full hierarchy paths
+  const { data: categoriesData, isLoading: categoriesLoading } = useQuery({
+    queryKey: ['practiceCategories'],
+    queryFn: () => getCategoriesWithPaths(),
+  });
+
+  const categories = categoriesData?.data || [];
+
+  // Fetch questions based on selected category
+  const { data: questionsData, isLoading: questionsLoading } = useQuery({
+    queryKey: ['practiceQuestions', selectedCategory],
+    queryFn: async () => {
+      if (selectedCategory === "all") {
+        return getAllQuestions();
+      }
+      return getQuestionsByCategory(selectedCategory);
+    },
+    enabled: !categoriesLoading,
+  });
 
   const availableQuestions = useMemo(() => {
-    if (selectedCategory === "all") {
-      return sampleQuestions;
-    }
-    return sampleQuestions.filter((q) => q.category === selectedCategory);
-  }, [selectedCategory]);
+    if (!questionsData?.data) return [];
+    return questionsData.data.map(mapQuestionToApp);
+  }, [questionsData]);
 
   const maxQuestions = Math.min(availableQuestions.length, 50);
 
   const handleStartTest = () => {
-    let questions;
-    if (selectedCategory === "all") {
-      const shuffled = [...sampleQuestions].sort(() => 0.5 - Math.random());
-      questions = shuffled.slice(0, Math.min(questionCount, sampleQuestions.length));
-    } else {
-      questions = getRandomQuestions(selectedCategory, questionCount);
+    if (availableQuestions.length === 0) {
+      toast({
+        variant: "destructive",
+        title: "No questions available",
+        description: "There are no questions available for the selected category.",
+      });
+      return;
     }
+
+    // Shuffle and select questions (max 50)
+    const shuffled = [...availableQuestions].sort(() => 0.5 - Math.random());
+    const maxQuestionsToSelect = Math.min(questionCount, availableQuestions.length, 50);
+    const questions = shuffled.slice(0, maxQuestionsToSelect);
+    
     setTestQuestions(questions);
     setTestResults(null);
     setTestStarted(true);
   };
 
-  const handleTestComplete = (results: TestResults) => {
+  const handleTestComplete = async (results: TestResults) => {
     setTestResults(results);
+
+    // Save test result if user is logged in
+    if (user) {
+      setSavingResult(true);
+      try {
+        const categoryId = selectedCategory === "all" ? null : selectedCategory;
+        const { error } = await saveTestResult(user.id, {
+          categoryId,
+          score: results.score,
+          totalQuestions: results.totalQuestions,
+          timeTaken: results.timeTaken,
+          answers: results.answers,
+        });
+
+        if (error) {
+          console.error('Error saving test result:', error);
+          toast({
+            variant: "destructive",
+            title: "Error",
+            description: "Failed to save test result. Your progress was not saved.",
+          });
+        } else {
+          toast({
+            title: "Test result saved!",
+            description: "Your progress has been saved successfully.",
+          });
+        }
+      } catch (error) {
+        console.error('Error saving test result:', error);
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to save test result. Your progress was not saved.",
+        });
+      } finally {
+        setSavingResult(false);
+      }
+    }
+  };
+
+  const handleTestExit = async (results: Partial<TestResults>) => {
+    // Save incomplete test result if user is logged in
+    if (user && results.totalQuestions && results.timeTaken !== undefined) {
+      try {
+        const categoryId = selectedCategory === "all" ? null : selectedCategory;
+        const { error } = await saveTestResult(user.id, {
+          categoryId,
+          score: results.score || 0,
+          totalQuestions: results.totalQuestions,
+          timeTaken: results.timeTaken,
+          answers: results.answers || [],
+        });
+
+        if (error) {
+          console.error('Error saving incomplete test result:', error);
+          toast({
+            variant: "destructive",
+            title: "Warning",
+            description: "Test exited but progress may not have been saved.",
+          });
+        } else {
+          toast({
+            title: "Test exited",
+            description: "Your progress has been saved (marked as incomplete).",
+          });
+        }
+      } catch (error) {
+        console.error('Error saving incomplete test result:', error);
+        toast({
+          variant: "destructive",
+          title: "Warning",
+          description: "Test exited but progress may not have been saved.",
+        });
+      }
+    }
+
+    // Reset test state
+    setTestStarted(false);
+    setTestQuestions([]);
   };
 
   const handleRetry = () => {
@@ -64,8 +176,8 @@ const PracticePage = () => {
 
   const getCategoryName = () => {
     if (selectedCategory === "all") return "Mixed Topics";
-    const cat = categories.find((c) => c.slug === selectedCategory);
-    return cat?.name || "Practice";
+    const cat = categories.find((c) => c.id === selectedCategory);
+    return cat?.path || cat?.name || "Practice";
   };
 
   // Show results
@@ -79,6 +191,7 @@ const PracticePage = () => {
               results={testResults}
               questions={testQuestions}
               onRetry={handleRetry}
+              isSaving={savingResult}
             />
           </div>
         </main>
@@ -99,6 +212,7 @@ const PracticePage = () => {
               categoryName={getCategoryName()}
               timeLimit={timeLimit}
               onComplete={handleTestComplete}
+              onExit={handleTestExit}
             />
           </div>
         </main>
@@ -143,22 +257,28 @@ const PracticePage = () => {
                 {/* Category Selection */}
                 <div className="space-y-2">
                   <Label>Subject Category</Label>
-                  <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a category" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">All Categories (Mixed)</SelectItem>
-                      {categories.map((cat) => (
-                        <SelectItem key={cat.id} value={cat.slug}>
-                          {cat.name}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <p className="text-xs text-muted-foreground">
-                    {availableQuestions.length} questions available
-                  </p>
+                  {categoriesLoading ? (
+                    <div className="text-sm text-muted-foreground">Loading categories...</div>
+                  ) : (
+                    <>
+                      <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select a category" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All Categories (Mixed)</SelectItem>
+                          {categories.map((cat) => (
+                            <SelectItem key={cat.id} value={cat.id}>
+                              {cat.path} ({cat.question_count} questions)
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      <p className="text-xs text-muted-foreground">
+                        {questionsLoading ? "Loading questions..." : `${availableQuestions.length} questions available`}
+                      </p>
+                    </>
+                  )}
                 </div>
 
                 {/* Question Count */}
@@ -169,13 +289,13 @@ const PracticePage = () => {
                   </div>
                   <Slider
                     value={[questionCount]}
-                    onValueChange={([value]) => setQuestionCount(value)}
+                    onValueChange={([value]) => setQuestionCount(Math.min(value, 50))}
                     min={5}
-                    max={maxQuestions}
+                    max={Math.min(maxQuestions, 50)}
                     step={5}
                   />
                   <p className="text-xs text-muted-foreground">
-                    Select between 5 and {maxQuestions} questions
+                    Select between 5 and {Math.min(maxQuestions, 50)} questions (maximum 50)
                   </p>
                 </div>
 
@@ -220,10 +340,10 @@ const PracticePage = () => {
                   onClick={handleStartTest} 
                   className="w-full gap-2" 
                   size="lg"
-                  disabled={availableQuestions.length === 0}
+                  disabled={availableQuestions.length === 0 || questionsLoading || categoriesLoading}
                 >
                   <Play className="h-5 w-5" />
-                  Start Practice Test
+                  {questionsLoading || categoriesLoading ? "Loading..." : "Start Practice Test"}
                 </Button>
               </CardContent>
             </Card>

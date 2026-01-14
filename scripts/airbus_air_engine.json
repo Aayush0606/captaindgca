@@ -1,0 +1,2331 @@
+[
+  {
+    "question": "The Full Authority Digital Engine Control (FADEC) controls which of the following functions:",
+    "options": [
+      "Fuel metering",
+      "Engine limits",
+      "Automatic and manual starting.",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "FADEC System Functions 1. Control of Gas Generator Fuel flow control Acceleration and deceleration schedules Variable bleed valve and variable stator vane schedules Turbine clearance control Idle setting 2. Protection Against Engine Exceeding Limits N1 and N2 overspeed protection Monitoring of EGT during engine start 3. Power Management Automatic control of engine thrust rating Computation of thrust parameter limits Manual power management based on thrust lever position Automatic power management (A/THR demand) 4. Automatic Engine Starting Sequence Control of: Start valve (ON/OFF) HP fuel valve Fuel flow Ignition (ON/OFF) Monitoring of: N1, N2, Fuel Flow (FF), Exhaust Gas Temperature (EGT) Initiation of abort and recycle (on the ground only) 5. Manual Engine Starting Sequence Passive monitoring of engine Control of: Start valve HP fuel valve Ignition 6. Thrust Reverser Control Actuation of blocker doors Engine setting during reverser operation 7. Fuel Recirculation Control Fuel recirculation to tanks based on: Engine oil temperature Fuel system configuration Flight phase 8. Transmission of Engine Parameters & Monitoring Information to Cockpit Indicators Primary engine parameters Starting system status Thrust reverser system status FADEC system status 9. Detection, Isolation, and Recording of Failures 10. FADEC Cooling"
+  },
+  {
+    "question": "The FADEC is normally powered by:",
+    "options": [
+      "The RAT",
+      "Its own magnetic alternator",
+      "The normal aircraft electrical system"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Each powerplant has a FADEC (Full Authority Digital Engine Control) system. FADEC is a digital control system that performs complete engine management. FADEC has two-channel redundancy, with one channel active and one in standby. If one channel fails, the other automatically takes control. The system has a magnetic alternator for an internal power source. FADEC is mounted on the fan case. The Engine Interface Unit (EIU) transmits to FADEC the data it uses for engine management"
+  },
+  {
+    "question": "During an automatic start sequence; selecting the ENG MASTER switch to on:",
+    "options": [
+      "Displays the ECAM engine page.",
+      "Initiates the start sequence.",
+      "Closes the pack valves",
+      "First two statements are correct"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The FADEC has control during a manual engine start sequence except for:",
+    "options": [
+      "The high pressure fuel valve.",
+      "The start valve.",
+      "An automatic abort"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Manual Engine Starting Sequence Passive monitoring of the engine Control of: Start valve HP fuel valve Ignition An automatic abort in automatic start only"
+  },
+  {
+    "question": "Continuous ignition is automatically provided during the following:",
+    "options": [
+      "Flex or TO/GA thrust is selected on the ground.",
+      "ENG ANTI ICE switch is ON",
+      "Engine surge on stall occurs in flight.",
+      "Any of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The A/THR is armed on the ground provided at least one FD is on by:",
+    "options": [
+      "Setting the throttles to TO/GA",
+      "Automatically at engine start.",
+      "With engines running; pressing the A/THR p/b manually."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "If a throttle is set between two detents; the FADEC selects the rating limit:",
+    "options": [
+      "Determined by the throttle position.",
+      "Corresponding to the higher mode.",
+      "Corresponding to the lower mode."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "When the A/THR system is in use:",
+    "options": [
+      "The throttles move automatically according to FADEC commands.",
+      "The throttles can only be moved manually.",
+      "The throttles will move when the A/THR p/b is used."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "A/THR engagement is confirmed when “A/THR” is displayed in ______ in the right column of the FMA.",
+    "options": [
+      "Green",
+      "Blue",
+      "White"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If an A/THR disconnect switch is pushed and held for more than _______ seconds; the A/THR system is disconnected for the remainder of the flight; including the _______.",
+    "options": [
+      "10 Seconds - Alpha floor Protection",
+      "12 Seconds - Alpha floor Protection",
+      "15 Seconds - Alpha floor Protection",
+      "18 Seconds - Alpha floor Protection"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Takeoff can be performed using which power settings?",
+    "options": [
+      "Any manual setting.",
+      "FLEX and MCT.",
+      "CLIMB and TO/GA",
+      "FLEX/MCT and TO/GA."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "When is T.O. INHIBIT and LDG INHIBIT active?",
+    "options": [
+      "TO 750 feet AGL, LND below 1500 feet AGL.",
+      "TO 1000 feet AGL, LND below 1000 feet AGL.",
+      "TO 1500 feet AGL, LND below 750 feet AGL.",
+      "TO 1500 feet AGL, LND below 1000 feet AGL"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "How many thrust lever positions are there, and how are they labeled?",
+    "options": [
+      "There are 6 thrust levers positions: TO/GA, MCT, FLEX, CL, IDLE and REV IDLE.",
+      "There are 6 thrust levers positions: TO/GA, FLX/MCT, CL, IDLE, REV IDLE and MREV.",
+      "There are 4 thrust levers positions: TO/GA, FLX/MCT, CL, IDLE.",
+      "There are 5 thrust levers positions: TO/GA, FLX/MCT, CL, IDLE and REV IDLE."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "You are just about to take off. You have not inserted a FLEX temperature. Can you still takeoff?",
+    "options": [
+      "Yes, by setting the thrust levers to the CLIMB detent.",
+      "Yes, by setting the thrust levers to the FLEX/MCT detent",
+      "Yes, but only using the TO/GA detent",
+      "Not until a FLEX temperature is inserted."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During an engine start sequence, the gray background on N2 disappears at about 57%. What does this indicate?",
+    "options": [
+      "That the igniters are no longer being powered.",
+      "That the start sequence has finished and all engine parameters have stabilized.",
+      "That the start valve air pressure has dropped",
+      "That there is a start fault and a dry crank is in progress."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What does the FLEX represent in the FLX/MCT detent?",
+    "options": [
+      "This is a reduced thrust setting used for takeoff.",
+      "This is the maximum continuous thrust setting for single-engine operations.",
+      "This is the thrust setting that should be chosen in the case of a singleengine go-around.",
+      "This is a derated thrust according the ground temperature of the day."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What is required for the FADEC to compute a reduced thrust setting?",
+    "options": [
+      "A FLEX temperature must be entered on the INIT page of the MCDU.",
+      "Nothing, it is an automatic function of the FADEC",
+      "A FLEX temperature must be entered on the TAKE OFF PERF page of the MCDU."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Using manual thrust, the thrust lever position will determine the thrust setting for the engine.",
+    "options": [
+      "True. They will operate like conventional throttles",
+      "True, but care must be taken not to overspeed the engines.",
+      "False, the next higher detent will be the thrust limit."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What is considered to be the active range of the A/THR system?",
+    "options": [
+      "During single engine operations from just above the IDLE stop to the FLX/MCT detent.",
+      "During two engine operations from just above the IDLE stop to the CL detent.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If the thrust levers are set in the idle detent, is Alpha floor protection still available?",
+    "options": [
+      "Yes Thrust lever position is disregarded",
+      "Yes, as long as “A/THR” appears in Column five.",
+      "No, because the IDLE detent is out of the A/THR active range"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Is there any mechanical linkage between the thrust levers and the engines?",
+    "options": [
+      "There is a fiber optic backup.",
+      "There is a mechanical linkage in case the ECU fails.",
+      "No, it is electrically powered and hydraulically actuated.",
+      "No, it is totally electrical."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is Alpha floor protection?",
+    "options": [
+      "It helps prevent the aircraft from stalling and protects against windshear encounters during takeoff and approach.",
+      "It is a function of the flight control laws to prevent the aircraft from stalling.",
+      "It helps prevent the aircraft from stalling by limiting the angle of bank at low airspeeds.",
+      "It helps prevent the aircraft from stalling by limiting the angle of climb at high airspeeds."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Alpha floor protection is available:",
+    "options": [
+      "From lift off and down to 100 feet radio altitude in the landing configuration.",
+      "From lift off and down to 50 feet radio altitude in the landing configuration",
+      "From lift off and down to 500 feet radio altitude in the landing configuration.",
+      "From lift off and down to 750 feet radio altitude in the landing configuration."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How do you arm the A/THR in flight?",
+    "options": [
+      "A/THR switch ON when throttles are in the engagement mode.",
+      "A/THR switch ON when throttles are not in the engagement mode."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between variable thrust and the speed mode?",
+    "options": [
+      "In the fixed thrust mode, thrust is fixed and the elevator controls the speed.",
+      "In the variable thrust mode, thrust is fixed and speed is controlled by the elevator.",
+      "In the fixed thrust mode, thrust is variable and speed is controlled by the elevator."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The left column, first line of the FMA is used to indicate:",
+    "options": [
+      "If A/THR is off, armed, or active.",
+      "The mode of the A/THR in use when A/THR is armed or active",
+      "Amber caution messages.",
+      "The thrust indication"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What are the two basic modes of the A/THR system?",
+    "options": [
+      "Thrust and Mach.",
+      "Thrust and speed",
+      "Variable thrust and fixed speed",
+      "Mach and speed."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Is any thrust lever action required if an engine failed at rotation while using FLEX takeoff power?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Can the engines be overboosted in the TOGA position?",
+    "options": [
+      "Yes, if the autothrust function is not active.",
+      "No, because the ECU provides engine protection limit by monitoring N1, N2, and HMU fuel flow adjustments.",
+      "No, because the EIU is responsible for monitoring N1 and N2."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How can A/THR be ARMED automatically?",
+    "options": [
+      "Whenever a takeoff or go-around is initiated with at least one flight director ON.",
+      "When Alpha floor protection is activated",
+      "Both are correct"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When does oil quantity indication begin to pulse?",
+    "options": [
+      "Decreasing below 5 qts.",
+      "During engine start",
+      "Oil quantity detector or pressure fault."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Does the FADEC provide EGT limit protection constantly?",
+    "options": [
+      "Yes, in all phases of flight.",
+      "No, EGT limit protection is only available during ground auto starts.",
+      "No, EGT limit protection is only available during ground auto starts and single-engine operations"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Auto Thrust System: When are the throttles in the engagement range?",
+    "options": [
+      "Both throttles are above idle but not above the CLB detent when both engines are running.",
+      "A single throttle of an operating engine is above idle but not above the MCT detent when one engine is running",
+      "All of the above."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The idle setting on the aircraft is capable of modulating due to certain conditions. During descent, what might cause the IDLE N1 setting to increase?",
+    "options": [
+      "The slats are extended.",
+      "For a higher than normal bleed air demand or warmer than normal engine oil temp in flight.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Verification that Autothrust (A/THR) is active can be made by:",
+    "options": [
+      "Watching the automatic movement of the thrust levers.",
+      "Only when the thrust levers are set at TOGA.",
+      "only by looking at column five of the FMA."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When Alpha floor is activated, what power setting is automatically commanded and what FMA annunciation would appear in Column one?",
+    "options": [
+      "TOGA / A. FLOOR",
+      "CLB / CLB",
+      "MCT / THR LK",
+      "THR / LK"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During the automatic start sequence of ENG 2, you notice that only igniter B is powered. Is it normal?",
+    "options": [
+      "Yes, igniter A is only used for engine anti-ice.",
+      "No, normally both igniters are used for all engine starts.",
+      "Yes, igniter B is always used for ENG 2 start.",
+      "Yes, igniters are used alternately for engine start."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "As far as FMA annunciations are concerned, what would indicate that the A/THR system is active?",
+    "options": [
+      "“SPEED” appears in green in column one, line one.",
+      "A/THR” changes from blue to white as shown in column five, line three.",
+      "“A/THR” changes from white to blue in column five, line one.",
+      "“SPEED” appears in amber in column one, line one."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "If a thrust lever is set between two detents, the FADEC selects the rating limit corresponding to the higher limit.",
+    "options": [
+      "True. This limit is displayed on the upper ECAM.",
+      "False. For safety reasons, it always selects the rating limit corresponding to the lower limit."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What would happen during the takeoff roll if the thrust levers were set to the FLX/MCT detent without FLEX temperature being entered?",
+    "options": [
+      "Nothing, the thrust setting would be at FLEX since FADEC automatically calculates a reduced thrust setting.",
+      "The thrust setting would be MCT and there would be no corresponding warnings.",
+      "A LEVEL TWO warning would sound along with the appearance of an ECAM message."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What abnormals would cause the FADEC to automatically abort a start?",
+    "options": [
+      "A hot start, an overtemp, a stalled start or no lightoff.",
+      "An engine overspeed.",
+      "A hot start, a stalled start, an overtemp or APU underspeed",
+      "A hot start, an overtemp or an engine overspeed."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During an in-flight start or a manual start, will the FADEC auto abort for an abnormal?",
+    "options": [
+      "Yes. It will for an in-flight start (but not for a manual start).",
+      "Yes",
+      "No"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "For reverser actuation, the left engine uses ____ hydraulic system pressure and the right engine uses _____ hydraulic system pressure.",
+    "options": [
+      "Green - Yellow",
+      "Yellow - Blue.",
+      "Yellow - Green.",
+      "Blue - Green"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "While flying the airplane with A/THR active, the speed knob is pulled and turned to a selected speed that happens to be slower than Alpha prot. What speed will the airplane slow to?",
+    "options": [
+      "Vls",
+      "Green Dot + 5 kts.",
+      "Green dot.",
+      "Green dot + 10 kts"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Where is the thrust reduction altitude found and is the number always the same?",
+    "options": [
+      "Column four, row three of the FMA. It will always be 1500 ft. AGL",
+      "TAKE OFF PERF page of the MCDU (it can be modified)",
+      "PROG page of the MCDU. It can be modified in order to meet constrainta",
+      "TAKE OFF PERF page of the MCDU. It cannot be modified."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During a manual start, what function does the FADEC perform?",
+    "options": [
+      "Passive monitoring of the start sequence, to close the start valve and cut off the ignition on the ground.",
+      "To control the start sequence and take corrective action in case of a failure or malfunction",
+      "The FADEC does not perform any function during a manual start and all actions have to be carried out by the pilots"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During normal operation, in what detent are the thrust levers positioned once the thrust reduction altitude has been reached?",
+    "options": [
+      "CL",
+      "MCT",
+      "FLX",
+      "CRZ"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "After take off the A/THR will not become active until:",
+    "options": [
+      "The thrust levers are placed in the CLIMB position.",
+      "The thrust levers are moved out of the TO/GA or FLEX/MCT detents.",
+      "The autopilot is engaged.",
+      "The A/THR pushbutton is manually selected ON"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Continuous ignition is provided automatically when:",
+    "options": [
+      "ENG ANTI ICE is selected ON and/or engine flameout is detected in flight",
+      "ENG ANTI ICE is selected ON.",
+      "ENG ANTI ICE is selected ON and/or engine flameout is detected in flight and/or the EIU fails."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Is it possible to disconnect Alpha floor?",
+    "options": [
+      "No, Alpha floor protection is always available.",
+      "Yes, by placing the thrust levers to IDLE.",
+      "Yes, by depressing the autothrottle push button on the FCU"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The FADEC will automatically abort an abnormal start thereby providing engine limit protection, but will the FADEC also automatically dry crank the engine?",
+    "options": [
+      "No, that is why there is a CRANK selection on the ENG MODE selector",
+      "Yes, even if the crew interrupts the start by placing the ENG MASTER switch to OFF",
+      "Yes, as long as the ENG MASTER switch remains in the ON position."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Automatic Engine Starting Sequence Controls: Start valve (ON/OFF) HP fuel valve Fuel flow Ignition (ON/OFF) Monitoring of: N1, N2, Fuel Flow (FF), Exhaust Gas Temperature (EGT) Initiation of: Abort and recycle (on the ground only) Manual Engine Starting Sequence Passive monitoring of engine Actuation of: Start valve HP fuel valve Ignition"
+  },
+  {
+    "question": "You are in the middle of a manual engine start. What are you looking for when you select ENG MASTER 2 ON?",
+    "options": [
+      "The fuel used is reset, fuel flow is indicated and IGNITION message on the E/WD.",
+      "The fuel flow is reset, an igniter is powered and fuel used is indicated.",
+      "The fuel used is reset, both igniters are powered and fuel flow is indicated",
+      "The fuel used is reset, both igniters are powered and N2 is increasing"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Each FADEC is a dual channel (A&B) computer providing full engine management.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "In addition to when the engine is operating, when else will the FADEC be powered?",
+    "options": [
+      "When the FADEC GND PWR pb on the maintenance panel is depressed, or the ENG MASTER switch is placed to ON.",
+      "When the FADEC control switch is placed to the IGN/START position.",
+      "For five minutes after electrical power is applied to the aircraft, when the FADEC GND PWR pb on the maintenance panel is depressed, or when the ENG MODE control switch is placed to IGN/START position.",
+      "As long as electrical power is established on the aircraft, the FADEC is powered"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During an automatic start, the FADEC controls:",
+    "options": [
+      "The start valves, igniters and fuel flow",
+      "The start valves, igniters, HP and LP fuel valves",
+      "The igniters and fuel flow",
+      "The start valves, igniters, HP and LP fuel valves, and fuel flow"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "You are at the start of a descent and a blue N1 arc is displayed showing the new thrust demand. When does this happen?",
+    "options": [
+      "Whenever the thrust levers are moved out of the CLIMB position",
+      "Whenever there is a power change in manual thrust.",
+      "Whenever there is a power change with the autopilot engaged.",
+      "Whenever there is power change with auto thrust engaged."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "A few seconds after selecting reverse, the amber REV indication changes to green. What does this mean?",
+    "options": [
+      "The reversers have been re-stowed.",
+      "The reversers are now fully deployed",
+      "The reverse thrust selection has been acknowledged",
+      "The reversers are unlocked."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During engine start the amber FAULT light on the ENG MASTER panel illuminates. This indicates:",
+    "options": [
+      "A failure in the automatic start sequence.",
+      "A failure of the ENG MODE SELECTOR.",
+      "A failure in the engine fire extinguishing system."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Which steps of a manual start are being taken care of by the FADEC?",
+    "options": [
+      "Starter valve closure and ignition cut off.",
+      "Starter valve opening and ignition start.",
+      "Starter valve closure and ignition start.",
+      "Starter valve opening and ignition cut off"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Can Alpha-floor be disengaged while in Alpha Protection?",
+    "options": [
+      "Yes, by manually disengaging the auto throttles",
+      "No, the system is designed to avoid such a disengagement.",
+      "Yes, by reducing at idle one of the throttles (for more than 5 seconds)"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How is manual arming of the A/THR system accomplished?",
+    "options": [
+      "By pressing the A/THR pb on the FCU confirm the pushbutton illuminates green or confirm an A/THR annunciation is displayed in column 5 of the FMA",
+      "By placing the thrust levers into the active range.",
+      "Advance at least one thrust lever to the TOGA or FLX/MCT detent with at least one Flight Director (FD) on."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What do you understand by N1?",
+    "options": [
+      "Rotational speed of LP Spool",
+      "Rotational speed of HP Spool",
+      "Ratio of air pressure at exhaust to inlet",
+      "Temperature of air leaving the engine"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What do you understand by N2?",
+    "options": [
+      "Rotational speed of LP Spool",
+      "Rotational speed of HP Spool",
+      "Ratio of air pressure at exhaust to inlet",
+      "Temperature of air leaving the engine"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What do you mean by EPR? The EPR is the Ratio between:",
+    "options": [
+      "Engine LP compressor outlet pressure & Engine Inlet pressure.",
+      "Engine HP compressor outlet pressure & Engine Inlet pressure.",
+      "Engine HP turbine exhaust pressure & Engine LP turbine exhaust pressure.",
+      "Engine LP turbine exhaust pressure & Engine Inlet pressure."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What are the engine primary parameters?",
+    "options": [
+      "EPR, N1, N2 and EGT.",
+      "EPR only.",
+      "EGT only."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The engine accessory gear box contain mainly:",
+    "options": [
+      "Integrated Drive Generator (IDG),",
+      "Hyd. Pump,",
+      "Start Valve",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What are the indications for the engine stall?",
+    "options": [
+      "ECAM message with master warming, CRC",
+      "ECAM message with master caution, single chime",
+      "Abnormal engine noises, fluctuating performance parameters high or a rapid EGT rise",
+      "Both (b) and (c) are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Each FADEC is a dual channel (A&B) computer providing full engine management",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The Full Authority Digital Engine Control (FADEC) controls which of the following functions:",
+    "options": [
+      "Control of FF",
+      "Protection against engine exceeding limits of N1 and N2",
+      "Automatic and manual starting sequences.",
+      "All of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The FADEC is normally powered by:",
+    "options": [
+      "The RAT",
+      "Its own magnetic alternator",
+      "The normal aircraft electrical system"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Select correct statements:",
+    "options": [
+      "FADEC is energized by its own magnetic alternator when engines are running.",
+      "FADEC is de-energized after 5 min of Master Switch to OFF.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "About EPR Rating Limit on E/WD: 1. In taxi out, it is always TOGA. 2. It will change to FLX TO on T/O Power application if FLEX Temp was inserted in MCDU. 3. In flight, when thrust levers are at idle, CL is selected. 4. When a thrust lever is set between two positions, the FADEC selects the rating limit corresponding to the highest mode.",
+    "options": [
+      "1,2,3,4",
+      "2,3,4",
+      "1,2,3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "On an A320 aircraft, how is Unrated N1 mode identified to the crew?",
+    "options": [
+      "Unrated N1 mode is identified by the phrase “N1 UNRATED MODE” as part of the ECAM “EPR MODE FAULT message.",
+      "Unrated N1 mode is identified by the phrase “N1 DEGRADED MODE” as part of the ECAM “EPR MODE FAULT\" message",
+      "An N1 amber thrust limit indicator is placed on the N1 Indicator."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Mark the correct statement:",
+    "options": [
+      "Anytime there is an EPR Mode fault, engine goes to either Rated N1 Mode or unrated N1 mode, depending upon the failure.",
+      "In both cases, A/THR is lost and power has to be manually set if snag develops in flight.",
+      "Rated N1 is a go and Un- rated N1 is no-go item if fault develops before departure.",
+      "All of the above are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "When both engines are in unrated N1 mode, to get TOGA power during missed approach.",
+    "options": [
+      "Move both thrust levers to TO-GA position",
+      "Move both thrust levers to MCT position",
+      "Move both thrust levers to get required N1",
+      "Move both the thrust levers between MCT & TOGA"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Which are the occasions mode will change from EPR to rated N1 mode",
+    "options": [
+      "If there is EPR mode fault occurs",
+      "If N1 mode is selected manually without any input failure to FADEC",
+      "If Temp input fails",
+      "Both (a) and (b) are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "In which power setting mode, auto thrust is available ?",
+    "options": [
+      "EPR mode and rated N1 mode",
+      "EPR mode only",
+      "EPR mode, N1 rated and N1 unrated mode",
+      "EPR mode and N1 unrated mode."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The thrust rating limit computed by FADEC is displayed on the upper ECAM. If a thrust lever is set between two detents:",
+    "options": [
+      "FADEC will select the rating limit corresponding to the thrust lever positions.",
+      "FADEC will select the rating limit corresponding to the higher detent.",
+      "FADEC will select the rating limit corresponding to the lower detent."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What does the FLEX represent in the FLX/MCT detent?",
+    "options": [
+      "This is a reduced thrust setting used for takeoff.",
+      "This is the maximum continuous thrust setting for single-engine operations.",
+      "This is the thrust setting that should be chosen in the case of a single-engine go-around."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What is required for the FADEC to compute a reduced thrust setting?",
+    "options": [
+      "A FLEX temperature must be entered on the INIT page of the MCDU.",
+      "Nothing, it is an automatic function of the FADEC.",
+      "A FLEX temperature must be entered on the TAKE OFF PERF page of the MCDU."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "You are just about to take off. You have not inserted a FLEX temperature. Can you still takeoff?",
+    "options": [
+      "Yes, by setting the thrust levers to the CLIMB detent.",
+      "Yes, by setting the thrust levers to the FLEX/MCT detent.",
+      "Yes, but only using the TO/GA detent.",
+      "Not until a FLEX temperature is inserted."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Using manual thrust, the thrust lever position will determine the thrust setting for the engine.",
+    "options": [
+      "True. They will operate like conventional throttles.",
+      "True, but care must be taken not to overspeed the engines.",
+      "False, the next higher detent will be the thrust limit."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "If a thrust lever is set between two detents, the FADEC selects the rating limit corresponding to the higher limit.",
+    "options": [
+      "True. This limit is displayed on the uppr ECAM.",
+      "False. For safety reasons, it always selects the rating limit corresponding to the lower limit."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The FADEC prevents the thrust from exceeding the limit for the thrust lever position in ______ mode.",
+    "options": [
+      "Manual",
+      "Automatic",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What would happen during the takeoff roll if the thrust levers were set to the FLX/MCT detent without FLEX temperature being entered?",
+    "options": [
+      "Nothing, the thrust setting would be at FLEX since FADEC automatically calculates a reduced thrust setting",
+      "The thrust setting would be MCT and there would be no corresponding warnings.",
+      "A LEVEL TWO warning would sound along with the appearance of an ECAM message."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "In case any engine fails during a FLX TO, the way to get MCT is :",
+    "options": [
+      "To move thrust lever ahead of FLX/MCT gate and bring back to MCT gate or",
+      "To move thrust lever CLB gate and back to MCT gate"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "On application of TO thrust with a FLX thrust set on the MCDU PERF TO, the Capt sets the thrust levers to the TOGA detent.",
+    "options": [
+      "ECAM ENG THR LEVERS NOT SET occurs.",
+      "ECAM ENG TO THRUST DISAGREE occurs.",
+      "No warnings occur because TOGA thrust is more than FLX thrust."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Can the engines be overboosted in the TOGA position?",
+    "options": [
+      "Yes, if the autothrust function is not active.",
+      "No, because the ECU provides engine protection limit by monitoring N1, N2, and HMU fuel flow adjustments.",
+      "No, because the EIU is responsible for monitoring N1 and N2."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What would happen during the takeoff roll if the thrust levers were set to the FLX/MCT detent without FLEX temperature being entered?",
+    "options": [
+      "Nothing, the thrust setting would be at FLEX since FADEC automatically calculates a reduced thrust setting.",
+      "The thrust setting would be MCT and there would be no corresponding warnings.",
+      "A LEVEL TWO warning would sound along with the appearance of an ECAM message."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Over boost of engine power is possible in",
+    "options": [
+      "EPR mode only",
+      "EPR & rated N1 mode",
+      "Rated and unrated N1 mode",
+      "Unrated N1 mode only"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is required for the FADEC to compute a reduced thrust setting?",
+    "options": [
+      "A FLEX temperature must be entered on the INIT page of the MCDU.",
+      "Nothing, it is an automatic function of the FADEC.",
+      "A FLEX temperature must be entered on the TAKE OFF PERF page of the MCDU."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What does the FLEX represent in the FLX/MCT detent?",
+    "options": [
+      "This is a reduced thrust setting used for takeoff.",
+      "This is the maximum continuous thrust setting for single-engine operations.",
+      "This is the thrust setting that should be chosen in the case of a single-engine go-around.",
+      "This is a derated thrust according the ground temperature of the day."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "After takeoff, a change from FLX to MCT is achieved:",
+    "options": [
+      "Automatically in case of engine failure.",
+      "By moving the thrust levers momentarily out of the FLX/CT detent and then back to FLX/MCT.",
+      "By setting the thrust levers to the TOGA or CLB detent and then back to FLX/MCT."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Can the engines be overboosted in the TOGA position?",
+    "options": [
+      "Yes, if the autothrust function is not active.",
+      "No, because the ECU provides engine protection limit by monitoring N1, N2, and HMU fuel flow adjustments",
+      "No, because the EIU is responsible for monitoring N1 and N2."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Where is the thrust reduction altitude found and is the number always the same?",
+    "options": [
+      "Column four, row three of the FMA. It will always be 1500 ft. AGL.",
+      "TAKE OFF PERF page of the MCDU (it can be modified).",
+      "PROG page of the MCDU. It can be modified in order to meet constraints.",
+      "TAKE OFF PERF page of the MCDU. It cannot be modified."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During normal operation, in what detent are the thrust levers positioned once the thrust reduction altitude has been reached?",
+    "options": [
+      "CL",
+      "MCT",
+      "FLX",
+      "CRZ"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Is there any mechanical linkage between the thrust levers and the engines?",
+    "options": [
+      "There is a fiber optic backup.",
+      "There is a mechanical linkage in case the ECU fails.",
+      "No, it is electrically powered and hydraulically actuated.",
+      "No, it is totally electrical."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Is any thrust lever action required if an engine failed at rotation while using FLEX takeoffpower?",
+    "options": [
+      "Yes.",
+      "No."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What are your selections for auto start of the engine ?",
+    "options": [
+      "Engine mode set to start / IGN, master switch ‘ON’",
+      "Engine mode set to norm, master switch ON",
+      "Engine mode set to start / IGN, Man start to ON, and master switch ‘ON’",
+      "Engine mode se to start / IGN, Master switch ON and MAN START ON till N2 reaches 43%"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Operationally, which engine do we start first? Why?",
+    "options": [
+      "No.2 so that we have yellow hyd system",
+      "No1 so that we have green hyd system."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During starting of engine {automatic or manual}; when you select the ENG MODE selector to IGN/START, what happens?",
+    "options": [
+      "FADEC is energized.",
+      "S/D displays ENG page.",
+      "Pack Flow Control Valves close",
+      "All are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Select the correct statements: 1. Pack Flow Control Valves will close when you select Engine Mode selector to IGN /START. 2. Valves will remain closed for 30 sec and will reopen if engines are not started within 30 secs. 3. Valves will re-open after 30 secs of both engine start, if ENG Mode Selector is left at IGN / START. 4. If one engine is started but then there is a delay of more than 30 secs in second engine start, Pack Valves will re-open in this extra time of more than 30 secs and will re-close when you put Master Switch of second engine to On.",
+    "options": [
+      "1,3",
+      "1,2,3,4",
+      "1,3,4"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Select the correct sequences once you put ENG Master Switch to On during an automatic start sequence: 1. Fuel used is reset to zero, start valve opens, N2 start rotating, oil pressure rise takes place. 2. Dry Cranking sequence takes place. 3. Ignition A or B comes up, Fuel flow registers and as such EGT rise takes place. 4. At 43 % N2, start valve closes and Ignition is cut-off. 5. At 50% N2, Ignition is cut-off.",
+    "options": [
+      "1,3,4",
+      "1,2,3,4",
+      "1,2,3,5"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "If during AUTO Start on ground, FADEC detects a hot start, hung start or no light up, 1. FADEC will apply a Fuel- Recovery Logic before 43% N2 in which FF is set to zero for half sec and both igniters will be switched On. 2. If the problem persist, an ECAM caution of ENG START FAULT will appear with M/C & SC. 3. FADEC will immediately shut off the fuel and turn off the ignition, but this is possible until 50% N2. 4. You will have to perform the dry crank of the affected engine after you put Master Switch to Off.",
+    "options": [
+      "1,2,3,4",
+      "1,2,3",
+      "1,2"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During Relight of an Engine in flight, if there is a tendency of hung start, Hot Start or no Light up,",
+    "options": [
+      "You will get ECAM ENG START FAULT",
+      "FADEC will perform the dry crank phase automatically.",
+      "During crank phase, ECAM will display a message of “AUTO CRANK IN PROGRESS”",
+      "All of the above are correct."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What happens after N2 increases above 43% during AUTO start of the engine?",
+    "options": [
+      "FADEC closes Start Valve at 43% N2.",
+      "FADEC stops ignition at 43% N2.",
+      "Pack Flow Control Valve re-opens after 30 seconds if other engine is not started within this 30 seconds.",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Mark the correct statements:",
+    "options": [
+      "AVAIL will be steady when there is a successful engine start on ground",
+      "AVAIL will pulse green if there is a successful start in flight{Re-light of engine in flight}",
+      "Both are correct"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During engine start the amber FAULT light on the ENG MASTER panel illuminates. This indicates:",
+    "options": [
+      "A failure in the automatic start sequence.",
+      "A failure of the ENG MODE SELECTOR.",
+      "A failure in the engine fire extinguishing system.",
+      "A faulty FADEC."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What abnormals would cause the FADEC to automatically abort a start?",
+    "options": [
+      "A hot start, an overtemp, a stalled start or no lightoff.",
+      "An engine overspeed.",
+      "A hot start, a stalled start, an overtemp or APU underspeed.",
+      "A hot start, an overtemp or an engine overspeed."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During an in-flight start or a manual start, will the FADEC auto abort for an abnormal?",
+    "options": [
+      "Yes. It will for an in-flight start (but not for a manual start).",
+      "Yes.",
+      "No."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "FADEC can do the abort start provided",
+    "options": [
+      "N2 is less than 55%",
+      "N2 is less than 43%",
+      "N2 is less than 50%",
+      "N2 is less than 57%"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Select correct statements: 1. FADEC provides EGT Protection only during Auto Start. 2. FADEC provides EGT Protection during Auto Start and Manual start only. 3. FADEC provides EGT Protection during Relight of Engine in flight only. 4. FADEC provides EGT Protection during Auto Start, Manual Start and Relight of Engine.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During an automatic start, the FADEC controls:",
+    "options": [
+      "The start valves, igniters and fuel flow.",
+      "The start valves, igniters, HP and LP fuel valves.",
+      "The igniters and fuel flow.",
+      "The start valves, igniters, HP and LP fuel valves, and fuel flow."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "FAULT amber light comes ON in engine control panel due to",
+    "options": [
+      "Fuel LP valve is in disagreement",
+      "Either Fuel HP valve is in disagreement or start valve fault",
+      "Either Fuel HP valve or LP valve is in disagreement",
+      "Start valve is in disagreement"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During FADEC FAULT",
+    "options": [
+      "Confirm engine failure by engine parameters in upper ECAM",
+      "Confirm engine failure by secondary engine parameters in lower ECAM",
+      "Confirm engine failure by system pages as HYD, ELEC or BLEED",
+      "Both (B) and (C) are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "AUTO Dry Cranking takes place if there is an ECAM ENG START FAULT and",
+    "options": [
+      "NO LIGHT UP",
+      "HOT START",
+      "HUNG START or STALL during start",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "ECAM of ENG START FAULT can come in case of:",
+    "options": [
+      "EGT OVERLIMIT",
+      "NO N1 ROTATION",
+      "THR LEVERS NOT AT IDLE",
+      "ALL OF THE ABOVE"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Does the FADEC provide EGT limit protection in all phases of flight?",
+    "options": [
+      "Yes, in all phases of flight.",
+      "No, EGT limit protection is only available during ground auto starts.",
+      "No, EGT limit protection is only available during ground auto starts and single-engine operations."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "During the automatic start sequence of ENG 2, you notice that only igniter B is powered. Is it normal?",
+    "options": [
+      "Yes, igniter A is only used for engine anti-ice.",
+      "No, normally both igniters are used for all engine starts.",
+      "Yes, igniter B is always used for ENG 2 start.",
+      "Yes, igniters are used alternately for engine start."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Automatic cranking is provided:",
+    "options": [
+      "By placing the engine start selector to CRANK.",
+      "By the FADEC following an automatic start abort.",
+      "In all cases of start abort."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How does the start valve open during a manual engine start?",
+    "options": [
+      "It opens, by manual command, when the MAN START Pb is selected on.",
+      "It opens automatically when the Eng Mode Selector is selected to IGN/START.",
+      "It opens automatically when the Master switch is selected to On."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How does the start valve close during a manual engine start?",
+    "options": [
+      "It closes, by manual command, when the MAN START Pb is selected off.",
+      "It closes automatically when the IGN/START switch is selected to NORM.",
+      "It closes automatically when N2 increases more than 43%."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During a manual start, what function does the FADEC perform?",
+    "options": [
+      "Passive monitoring of the start sequence, to close the start valve and cut off the ignition.",
+      "To control the start sequence and take corrective action in case of a failure or malfunction.",
+      "The FADEC does not perform any function during a manual start and all actions have to be carried out by the pilots."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Which steps of a manual start are being taken care of by the FADEC?",
+    "options": [
+      "Starter valve closure and ignition cut off.",
+      "Starter valve opening and ignition start.",
+      "Starter valve closure and ignition start.",
+      "Starter valve opening and ignition cut off."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During a manual start, how is the start valve opened?",
+    "options": [
+      "It is automatic once the ENG MASTER is placed to the ON position.",
+      "By pressing the ENG MAN START pushbutton's on the overhead panel.",
+      "By pressing the ENG MAN START pushbutton's on the overhead panel and ENG MODE selector is out of the NORM position."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During manual start,",
+    "options": [
+      "Only A igniter is used",
+      "Both igniters A & B are used",
+      "Only B igniter is used"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "In case of MAN START for engines,",
+    "options": [
+      "You have to shed some of electrical loads to increase bleed pressure if N2 does not reach 15%.",
+      "If electrical supply is interrupted during start sequence, you have to abort the start by selecting Master Switch OFF and you have to do a 30 secs of dry cranking.",
+      "Both of the above are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What takes place when we push the MAN START button?",
+    "options": [
+      "The start valve opens if the ENG MODE selector is set to IGN/START and N2< 10%.",
+      "Both pack valves close during the start sequence.",
+      "The blue ON light illuminates.",
+      "All of the above are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "In case of MANUAL start of the engine, what happens when you place MASTER SWITCH to ON?",
+    "options": [
+      "Both igniters come on.",
+      "LP & HP Fuel Valves open and FF is registered.",
+      "When N2 reaches 43%, start valve close and ignition cuts off.",
+      "All of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "How do you carry out dry cranking cycle?",
+    "options": [
+      "Mode selector to CRANK, and engine master switch ON",
+      "Mode selector to CRANK, MAN START pb to ON and master switch to OFF",
+      "Mode selector to CRANK, MAN START pb to ON and master switch to ON",
+      "Mode selector to NORMAL, MAN START pb to ON for 30 seconds."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "For starting the engine, THR LEVERS have to be at IDLE. If THR LEVERS are not at idle, you should expect:",
+    "options": [
+      "No light up.",
+      "Thrust to rapidly increase to the corresponding thrust lever position causing a hazardous situation.",
+      "ECAM caution of ENG START FAULT with M/C & S/C.",
+      "Both {B} & {C} are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "During an engine start sequence, the gray background on N2 disappears after 57%. What does this indicate?",
+    "options": [
+      "That the igniters are no longer being powered.",
+      "That the start sequence has finished and all engine parameters have stabilized.",
+      "That the start valve air pressure has dropped.",
+      "That there is a start fault and a dry crank is in progress."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Thrust reversers help in stopping the aircraft by blocking the fan air in the by- pass path and then changing its direction to forward.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Deployment of the thrust reverser system requires:",
+    "options": [
+      "One FADEC channel operating.",
+      "Aircraft on ground signal from at least one LGCIU.",
+      "Engine N2 more than 50%.",
+      "Throttle Lever Angle signal from the flight control SEC computer 1, 2 or 3.",
+      "All of the above."
+    ],
+    "correctAnswer": 4,
+    "explanation": ""
+  },
+  {
+    "question": "If SEC1 and SEC2 fail in flight",
+    "options": [
+      "Both thrust reversers are available",
+      "Only No.1 engine reverse thrust is available",
+      "Both engines reverse thrust are lost",
+      "Only No. 2 engine reverse thrust is available"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "One of FADEC’s functions is thrust reverser control.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "For reverser actuation, the left engine uses ____ hydraulic system pressure and the right engine uses _____ hydraulic system pressure.",
+    "options": [
+      "Green - Yellow.",
+      "Yellow - Blue.",
+      "Yellow - Green.",
+      "Blue - Green."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What is the minimum speed to use Max reverse thrust in case of normal situation?",
+    "options": [
+      "60 kts",
+      "Till aircraft comes to stop",
+      "80 kts",
+      "70 kts"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What are the important guidelines for the use of Reverse Thrust? 1). It is not permitted to select reverse thrust in flight. 2). It is not permitted to back up the aircraft with reverse thrust. 3). Maximum reverse should not be used below 70 kt (or when the airspeed indication starts to fluctuate). 4). Idle reverse is permitted down to aircraft stop. 5). It is permitted to back up the aircraft with reverse thrust in case of requirements.",
+    "options": [
+      "1,2,3",
+      "1,2,3,4",
+      "2,3,4,5",
+      "1,3"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "To operate No.1 engine thrust reverser system",
+    "options": [
+      "Green Hydraulic system pressure should be available",
+      "LGCIU should sense that a/c is on ground.",
+      "SEC1 or SEC2 should be available",
+      "All the above are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "A few seconds after selecting reverse, the amber REV indication changes to green on EPR gauge of E/WD. What does this mean?",
+    "options": [
+      "The reversers have been re-stowed.",
+      "The reversers are now fully deployed.",
+      "The reverse thrust selection has been acknowledged",
+      "The reversers are unlocked."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "An engine master switch in the ON position (Engine Fire pushbutton in):",
+    "options": [
+      "Sends a signal to open the LP fuel valve",
+      "Sends a signal to open the LP and HP fuel valves during automatic start.",
+      "Sends a signal to open the HP fuel valve"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The FMU (Fuel Metering Unit) is controlled by the FADEC and performs which function(s)?",
+    "options": [
+      "Overspeed protection for N1 and N2",
+      "Actuation of the HP shutoff valve to start or stop the engine.",
+      "Control of fuel flow to engine combustion chamber through the FMV (Fuel Metering Valve).",
+      "All of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "How are fuel LP valves closed?",
+    "options": [
+      "By engine master switch only",
+      "By engine master switch or by mode selector through FADEC",
+      "By engine master switch or by fire push button",
+      "By engine fire push button FADEC"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The air bleed system is used for:",
+    "options": [
+      "Cooling the engine compartment, turbine, engine and IDG oil.",
+      "Pneumatic system.",
+      "Engine stability.",
+      "All of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Which of the following is an idle mode?",
+    "options": [
+      "Modulated idle",
+      "Modulated idle and Approach idle.",
+      "Reverse idle only.",
+      "Modulated idle, Approach idle and Reverse idle."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Approach idle is:",
+    "options": [
+      "A higher idle RPM than normal. It is selected by the FMGS during approach.",
+      "A higher idle RPM than normal. It is selected when Flaps are 3 or FULL or when landing gear is down.",
+      "A higher idle RPM than normal. It is selected when flaps are 3 or FULL and the landing gear is down."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Continuous ignition means both igniters A & B are on.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Continuous Ignition is automatically selected on the engines in flight when:",
+    "options": [
+      "Aircraft is passing through severe turbulence.",
+      "Wing Anti-ice is selected ON.",
+      "Aircraft commences an Emergency Descent...",
+      "There is an engine flame-out."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Continuous ignition is automatically selected when: 1. Flex or TO/GA thrust is selected. 2. ENG ANTICE switch is ON 3. When Approach Idle is selected. 4. Engine surge on stall occurs in flight.",
+    "options": [
+      "1,2,3,4",
+      "1,2,3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What are the occasions when ignition should be manually selected?",
+    "options": [
+      "Before take off and landing",
+      "Single engine operation, fuel gravity and heavy rain",
+      "Single engine operation, before take off and landing",
+      "Single engine operation, fuel graving feed and running engine anti ice operation"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "With the ENGINE MODE switch in NORM, will ignition be provided if an engine flameout is detected in flight?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During auto start on ground, which ignition is used?",
+    "options": [
+      "IGN ‘A’ only",
+      "IGN ‘B’ only",
+      "Either IGN ‘A’ or IGN ‘B’",
+      "Both IGN ‘A’ or IGN ‘B’"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "On ground, after engine start, how would the PF select continuous ignition on the engine?",
+    "options": [
+      "Ensure ENG START selector is left in the IGN/START position.",
+      "Cycle the ENG START selector to NORM, and then back to IGN/START if selector was left at IGN/START after engine start.",
+      "Select the ENG MAN START pb on the overhead panel, causing ignition to turn on as the engine N1 speed is at or above ignition cut-off RPM."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During cross bleed start what should be the position of the bleed switches?",
+    "options": [
+      "Both engines bleeds ON",
+      "Both engines bleeds OFF",
+      "Receiving engine bleed OFF, running engine bleed ON",
+      "Receiving engine bleed ON, running engine bleed OFF"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What should the crew consider when using the “crossbleed engine” start procedure?",
+    "options": [
+      "Ensure that the ENG BLEED valve pushbuttons {all engines} are selected to “OFF”, if external pneumatic is supplied to a/c.",
+      "The N1 of the supplying engine may be increased upto 30% if required.",
+      "External pneumatic air if available and engine bleed supply may be used to assist in maintaining the required air pressure."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "When does oil quantity indication begin to pulse?",
+    "options": [
+      "Decreasing below 5 qts.",
+      "During engine start.",
+      "Oil quantity detector or pressure fault."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "N1 indication will pulse red when",
+    "options": [
+      "N1 is above N1 rating limit",
+      "N1 is above 100%",
+      "N1 is above 109%"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is Alpha floor protection?",
+    "options": [
+      "It helps prevent the aircraft from stalling and protects against windshear encounters basically during takeoff and approach.",
+      "It is one of the flight control laws to prevent the aircraft from stalling.",
+      "It helps prevent the aircraft from stalling by limiting the angle of bank at low airspeeds.",
+      "It helps prevent the aircraft from stalling by limiting the angle of climb at high airspeeds"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Alpha floor protection is available:",
+    "options": [
+      "From lift off and down to 100 feet radio altitude in the landing configuration.",
+      "From lift off and down to 50 feet radio altitude in the landing configuration.",
+      "From lift off and down to 500 feet radio altitude in the landing configuration.",
+      "From lift off and down to 750 feet radio altitude in the landing configuration."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "When Alpha floor is activated, what power setting is automatically commanded and what FMA annunciation would appear in Column one?",
+    "options": [
+      "TOGA / A. FLOOR",
+      "CLB / CLB",
+      "MCT / THR LK",
+      "THR / LK"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Is it possible to disconnect Alpha floor?",
+    "options": [
+      "No, Alpha floor protection is always available",
+      "Yes, by placing the thrust levers to IDLE.",
+      "Yes, by depressing the autothrottle push button on the FCU."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "If the thrust levers are set in the idle detent, is Alpha floor protection still available?",
+    "options": [
+      "Yes Thrust lever position is disregarded.",
+      "Yes, as long as 'A/THR' appears in Column five.",
+      "No, because the IDLE detent is out of the A/THR active range."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Can Alpha-floor be disengaged while in Alpha Protection?",
+    "options": [
+      "Yes, by manually disengaging the auto throttles.",
+      "No, the system is designed to avoid such a disengagement.",
+      "Yes, by reducing at idle one of the throttles (for more than 5 seconds)"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is considered to be the active range of the A/THR system?",
+    "options": [
+      "During single engine operations from just above the IDLE stop to the FLX/MCT detent.",
+      "During two engine operations from just above the IDLE stop to the CL detent.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Is there any mechanical linkage between the thrust levers and the engines?",
+    "options": [
+      "There is a fiber optic backup.",
+      "There is a mechanical linkage in case the ECU fails.",
+      "No, it is electrically powered and hydraulically actuated.",
+      "No, it is totally electrical."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "While flying the airplane with A/THR active, the speed knob is pulled and turned to a selected speed that happens to be slower than Alpha prot. What speed will the airplane slow to?",
+    "options": [
+      "Vls.",
+      "Green Dot + 5 kts.",
+      "Green dot.",
+      "Green dot + 10 kts"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How do you arm the A/THR in flight?",
+    "options": [
+      "A/THR switch ON when throttles are in the engagement mode.",
+      "A/THR switch ON when throttles are not in the engagement mode."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The left column, first line of the FMA is used to indicate:",
+    "options": [
+      "If A/THR is off, armed, or active.",
+      "The mode of the A/THR in use when A/THR is armed or active.",
+      "Amber caution messages.",
+      "The thrust indication."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What are the two basic modes of the A/THR system?",
+    "options": [
+      "Thrust and Mach.",
+      "Thrust and speed.",
+      "Variable thrust and fixed speed.",
+      "Mach and speed."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between variable thrust and the speed mode?",
+    "options": [
+      "In the fixed thrust mode, thrust is fixed and the elevator controls the speed.",
+      "In the variable thrust mode, thrust is fixed and speed is controlled by the elevator.",
+      "In the fixed thrust mode, thrust is variable and speed is controlled by the elevator."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Is any thrust lever action required if an engine failed at rotation while using FLEX takeoff power?",
+    "options": [
+      "Yes.",
+      "No."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How can A/THR be ARMED automatically?",
+    "options": [
+      "Whenever a takeoff or go-around is initiated with at least one flight director ON.",
+      "When Alpha floor protection is activated.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Auto Thrust System: When are the throttles in the engagement range?",
+    "options": [
+      "Both throttles are above idle but not above the CLB detent when both engines are running.",
+      "A single throttle of an operating engine is above idle but not above the MCT detent when one engine is running.",
+      "All of the above."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The EIU transmits via the ERU to FADEC the data it uses for engine management. The idle setting on the aircraft is capable of modulating due to certain conditions. During descent, what might cause the IDLE N1 setting to increase?",
+    "options": [
+      "The slats are extended.",
+      "For a higher than normal bleed air demand or warmer than normal engine oil temp in flight.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Verification that Autothrust (A/THR) is active can be made by:",
+    "options": [
+      "Watching the automatic movement of the thrust levers.",
+      "Only when the thrust levers are set at TOGA.",
+      "Only by looking at column five of the FMA."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Holding the instinctive disconnect push button’s for more than fifteen seconds will:",
+    "options": [
+      "Disengage the A/THR (including Alpha Floor) until below 1000 feet AGL for the remainder of the flight.",
+      "Disengage the A/THR (including Alpha Floor) until below 500 feet AGL for the remainder of the flight.",
+      "Disengage the A/THR (excluding Alpha Floor) for the remainder of the flight.",
+      "Disengage the A/THR (including Alpha Floor) for the remainder of the flight."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "As far as FMA annunciations are concerned, what would indicate that the A/THR system is active?",
+    "options": [
+      "'SPEED' appears in green in column one, line one",
+      "'A/THR' changes from blue to white as shown in column five, line three.",
+      "'A/THR' changes from white to blue in column five, line one.",
+      "'SPEED' appears in amber in column one, line one."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "After take off the A/THR will not become active until:",
+    "options": [
+      "The thrust levers are placed in the CLIMB position.",
+      "The thrust levers are moved out of the TO/GA or FLEX/MCT detents.",
+      "The autopilot is engaged.",
+      "The A/THR pushbutton is manually selected ON."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "If the instinctive disconnect pushbuttons on the thrust levers are depressed momentarily to disconnect autothrust:",
+    "options": [
+      "Autothrust can be reengaged using the A/THR pushbutton on the FCU, Alpha Floor is lost for the remainder of the flight.",
+      "Autothrust can be reengaged using the A/THR pushbutton on the FCU, Alpha Floor is available if required.",
+      "Both autothrust and alpha floor are lost for the remainder of the flight."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How is manual arming of the A/THR system accomplished?",
+    "options": [
+      "By pressing the A/THR pb on the FCU confirm the pushbutton illuminates green or confirm an A/THR annunciation is displayed in column 5 of the FMA.",
+      "By placing the thrust levers into the active range.",
+      "Advance at least one thrust lever to the TOGA or FLX/MCT detent with at least one Flight Director (FD) on."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "When the A/THR system is in use:",
+    "options": [
+      "The throttles move automatically according to FADEC commands.",
+      "The throttles can only be moved manually.",
+      "The throttles will move when the A/THR p/b is used."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The A/THR is armed on the ground by:",
+    "options": [
+      "Setting the throttles to Take-off Power",
+      "Automatically at engine start."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "A/THR engagement is confirmed when ‘A/THR’ is displayed in ______ in the right column of the FMA.",
+    "options": [
+      "Green",
+      "Blue",
+      "White"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If an A/THR disconnect switch is pushed and held for more than _______ seconds; the A/THR system is disconnected for the remainder of the flight; including the _______.",
+    "options": [
+      "10 Seconds - Alpha floor Protection",
+      "12 Seconds - Alpha floor Protection",
+      "15 Seconds - Alpha floor Protection",
+      "18 Seconds - Alpha floor Protection"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is considered to be the active range of the A/THR system?",
+    "options": [
+      "During single engine operations from just above the IDLE stop to the FLX/MCT detent.",
+      "During two engine operations from just above the IDLE stop to the CL detent.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If the thrust levers are set in the idle detent, is Alpha floor protection still available?",
+    "options": [
+      "Yes Thrust lever position is immaterial.",
+      "Yes, as long as 'A/THR' appears in Column five.",
+      "No, because the IDLE detent is out of the A/THR active range."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What are the two basic modes of the A/THR system?",
+    "options": [
+      "Thrust and Mach.",
+      "Thrust and speed.",
+      "Variable thrust and fixed speed.",
+      "Mach and speed."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Auto Thrust System: When are the throttles in the active range?",
+    "options": [
+      "Both throttles are above idle but not above the CLB detent when both engines are running.",
+      "A single throttle of an operating engine is above idle but not above the MCT detent when one engine is running.",
+      "All of the above."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Holding the instinctive disconnect push button’s for more than fifteen seconds will:",
+    "options": [
+      "Disengage the A/THR (including Alpha Floor) until below 1000 feet AGL for the remainder of the flight.",
+      "Disengage the A/THR (including Alpha Floor) until below 500 feet AGL for the remainder of the flight.",
+      "Disengage the A/THR (excluding Alpha Floor) for the remainder of the flight.",
+      "Disengage the A/THR (including Alpha Floor) for the remainder of the flight."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "As far as FMA annunciations are concerned, what would indicate that the A/THR system is active?",
+    "options": [
+      "'SPEED' appears in green in column one, line one.",
+      "'A/THR' changes from blue to white as shown in column five, line three.",
+      "A/THR' changes from white to blue in column five, line one.",
+      "'SPEED' appears in amber in column one, line one."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "After take off the A/THR will not become active until:",
+    "options": [
+      "The thrust levers are placed in the CLIMB position.",
+      "The thrust levers are moved out of the TO/GA or FLEX/MCT detents.",
+      "The autopilot is engaged.",
+      "The A/THR pushbutton is manually selected ON."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "With auto thrust active, what is the upper limit of the EPR target.",
+    "options": [
+      "CLB",
+      "MCT",
+      "Actual position of the thrust lever",
+      "TOGA"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Which power setting mode, auto thrust is available ?",
+    "options": [
+      "EPR mode and rated N1 mode",
+      "EPR mode only",
+      "EPR mode N1 rated and N1 unrated mode",
+      "EPR mode and N1 unrated mode."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What happens to engine thrust if active A/ THR disengaged with thrust levers in CLB gate ?",
+    "options": [
+      "Engine thrust is frozen at the value before the A/THR disengagement and THR – LK message appears on the FMA",
+      "Engine power reduces to IDLE power on both engines",
+      "Engine thrust will change immediately and corresponds to thrust lever position",
+      "Engine power increases upto MCT on both engines."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What happens to the engine power at the time of disengagement of A/THR if the thrust levers are not in CLB or MCT",
+    "options": [
+      "Engine power is frozen to the value at the item of disengagement of ATHR",
+      "Engine power immediately changes to idle",
+      "Engine power changes to TOGA or MCT",
+      "Engine power changes to TLA position immediately"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Verification that Autothrust (A/THR) is active can be made by:",
+    "options": [
+      "Watching the automatic movement of the thrust levers.",
+      "Only when the thrust levers are set at TOGA.",
+      "Only by looking at column five of the FMA."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The left column, first line of the FMA is used to indicate:",
+    "options": [
+      "If A/THR is off, armed, or active.",
+      "The mode of the A/THR in use when A/THR is armed or active.",
+      "Amber caution messages.",
+      "The thrust indication."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How can A/THR be ARMED automatically?",
+    "options": [
+      "Whenever a takeoff or go-around is initiated with at least one flight director ON.",
+      "When Alpha floor protection is activated.",
+      "Both are correct"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "How is manual arming of the A/THR system accomplished?",
+    "options": [
+      "By pressing the A/THR pb on the FCU confirm the pushbutton illuminates green or confirm an A/THR annunciation is displayed in column 5 of the FMA.",
+      "By placing the thrust levers into the active range.",
+      "Advance at least one thrust lever to the TOGA or FLX/MCT detent with at least one Flight Director (FD) on."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "When is the auto thrust active with both the engines running",
+    "options": [
+      "When the thrust lever is between idle and MCT",
+      "When both levers are between idle and CLB",
+      "On thrust lever is between IDLE and CLB and the other is between IDLE AND MCT (including MCT) power FLEX T/O is not selected.",
+      "Both (b) and (c) are correct ."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Disengagement of auto thrust take place",
+    "options": [
+      "By pressing ATHR pb or instinctive disconnect pb",
+      "By moving any one thrust lever above MCT below 100 feet RA",
+      "By selecting N1 mode",
+      "All the above are correct"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is the maximum continuous oil temperature allowed for engine running?",
+    "options": [
+      "165 Deg. C",
+      "150 Deg. C",
+      "157 Deg. C",
+      "155 Deg. C"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is the minimum oil temperature before take off power?",
+    "options": [
+      "+ 50 Deg. C",
+      "+ 10 Deg. C",
+      "+ 40 Deg. C",
+      "+ 110 Deg. C"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What is the minimum oil quantity in the tank before starting the engine ?",
+    "options": [
+      "17 quarts",
+      "12 quarts",
+      "11 quarts + Estimated consumption (0.3 qt/ hr)",
+      "12 quarts + Estimated consumption"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is the Max N1 and N2 allowed",
+    "options": [
+      "100% N1 102% N2",
+      "100% N1 & 100% N2",
+      "100% N1 and 109% N2",
+      "100% N1 & 105% N2"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is the maximum EGT during starting the engine ?",
+    "options": [
+      "590 Deg. C",
+      "610 Deg. C",
+      "635 Deg.C",
+      "745 Deg. C"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "For engine starting,",
+    "options": [
+      "Light up timing is 20 sec on ground.",
+      "Light up timing is 30 sec in flight.",
+      "If light up does not take place in this time, expect ECAM ENG START FAULT",
+      "All are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What are the warnings if oil pressure drops below 60 psi?",
+    "options": [
+      "ECAM message, Master Caution, SSC & Engine page on lower ECAM",
+      "ECAM message, Master Warning, CRC and Engine page on lower ECAM",
+      "Only ECAM message",
+      "Only Engine page appears on lower ECAM"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What are the indications if the oil temperature exceeds the maximum limit?",
+    "options": [
+      "ECAM message, Master Caution, SC and ENG page on Lower ECAM",
+      "ECAM message and ENG page on Lower ECAM",
+      "Only ENG page appears on Lower ECAM",
+      "ECAM message Master Warning, CRC and Engine Page on lower ECAM"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "For ENG RELIGHT in flight:",
+    "options": [
+      "Start Valve engagement is below 18% of N2.",
+      "Start Valve engagement is same as on ground i.e below 10% N2."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "For ENG RELIGHT in flight, engine light up time is same 20 sec as on ground.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "About engine relight in flight:",
+    "options": [
+      "No attempt should be made to restart the engine if there are indications of engine damage or if engine was shutdown due to fire.",
+      "If outside the windmilling start envelope, FADEC will open the starter valve.",
+      "Be aware that crew must take appropriate action in case of abnormal start.",
+      "All are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "During Relight of engine in flight, 1). FADEC will open the start valve if a/c is outside stabilized wind milling envelope. 2). FADEC will open the start valve if a/c is within the stabilized wind milling envelope. 3). Engine Light up must be achieved within 30 seconds. 4). Engine Light up limit does not apply in flight.",
+    "options": [
+      "1,3",
+      "2,3",
+      "2,4",
+      "3,4"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During Re-light in flight, if engine is showing signs of hung start, will FADEC perform auto-start abort?",
+    "options": [
+      "Yes, FADEC has authority to abort the start in case of in-flight abnormal start.",
+      "No, FADEC doesn’t have the authority of start abort in flight.",
+      "Yes, FADEC has authority to abort the start in case of EGT Over limit in flight.",
+      "None of the above"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "For relight of an engine in flight, no attempt should be made to restart an engine,",
+    "options": [
+      "If there are indications of engine damage,",
+      "If the engine had been shut down because of an engine fire.",
+      "If there is a recognizable possibility that an attempted relight may result in fire.",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "On ground, after engine start, how would the PF select continuous ignition on the engine?",
+    "options": [
+      "Ensure ENG START selector is left in the IGN/START position.",
+      "Cycle the ENG START selector to NORM, and then back to IGN/START.",
+      "Select the ENG MAN START pb on the overhead panel, causing ignition to turn on as the engine N1 speed is at or above ignition cut-off RPM."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How does the start valve operate during a manual engine start?",
+    "options": [
+      "It closes, by manual command, when the MAN START Pb is selected off.",
+      "It closes automatically when the IGN/START switch is selected to NORM.",
+      "It closes automatically when N2 increases more than 43%."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During engine start the amber FAULT light on the ENG MASTER panel illuminates. This indicates:",
+    "options": [
+      "A failure in the automatic start sequence.",
+      "A failure of the ENG MODE SELECTOR.",
+      "A failure in the engine fire extinguishing system.",
+      "A faulty FADEC."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "On an A320 aircraft, how is Unrated N1 mode identified to the crew?",
+    "options": [
+      "Unrated N1 mode is identified by the phrase “N1 UNRATED MODE” as part of the ECAM “EPR MODE FAULT message.",
+      "Unrated N1 mode is identified by the phrase “N1 DEGRADED MODE” as part of the ECAM “EPR MODE FAULT\" message.",
+      "An N1 amber thrust limit indicator is placed on the N1 Indicator."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The idle setting on the aircraft is capable of modulating due to certain conditions. During descent, what might cause the IDLE N1 setting to increase?",
+    "options": [
+      "The slats are extended.",
+      "For a higher than normal bleed air demand or warmer than normal engine oil temp in flight.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "You are at the start of a descent and a blue N1 arc is displayed showing the new thrust demand. When does this happen?",
+    "options": [
+      "Whenever the thrust levers are moved out of the CLIMB position.",
+      "Whenever there is a power change in manual thrust.",
+      "Whenever there is a power change with the autopilot engaged.",
+      "Whenever there is power change with auto thrust engaged."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The blue circle above the N1 display:",
+    "options": [
+      "Corresponds to thrust lever position.",
+      "Indicates N2 value.",
+      "Corresponds to maximum thrust rating."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  }
+]

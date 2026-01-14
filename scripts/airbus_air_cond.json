@@ -1,0 +1,1788 @@
+[
+  {
+    "question": "Conditioned air is distributed to:",
+    "options": [
+      "Cockpit, cargo bays and cabin",
+      "Cockpit, fwd and aft cabins",
+      "Cockpit, avionics bay and cabin",
+      "Cockpit, cabin and holds 1 and 2 only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The air conditioning system is fully automatic. It provides continuous air renewal and maintains a constant, selected temperature in the following three zones : COCKPIT, FWD CABIN, AFT CABIN. These three zones are independently controlled."
+  },
+  {
+    "question": "Hot air fault light illuminates on the air conditioning panel,",
+    "options": [
+      "The hot air press. reg. valve opens and the trim air valves close.",
+      "The hot air press. reg. valve closes and the trim air valves open.",
+      "The hot air press. reg. valve closes and the trim air valves close.",
+      "The hot air press. reg. valve opens and the trim air valves open."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Does the trim air provide the warm air or the cold air to the air conditioning system?",
+    "options": [
+      "Cold air",
+      "Warm air"
+    ],
+    "correctAnswer": 1,
+    "explanation": "TRIM AIR VALVES are electrically-controlled by the zone controller or the ACSC . A trim air valve, associated with each zone, adjusts the temperature by adding hot air. The cockpit trim air valve is controlled by the ACSC 1 , and the cabin trim air valves are controlled by the ACSC 2."
+  },
+  {
+    "question": "In case of zone controller primary and secondary channel failure, what temperatures are maintained by pack one and pack two?",
+    "options": [
+      "15 deg.C both",
+      "25 deg.C both",
+      "20 deg.C for pack one and 10 deg.C for pack two",
+      "24 deg.C for pack one and 15 deg.C for pack two"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Optimized regulation is lost. Trim air valves are driven to the fully closed position. Pack 1 controls the cockpit temperature to the selected value and pack 2 controls the cabin temperature (FWD and AFT) to the mean value of the selected temperatures. Pack 1: ~20°C Pack 2: ~10°C"
+  },
+  {
+    "question": "In normal flight in closed circuit configuration, the avionics ventilation system controls the temperature of the cooling air by:",
+    "options": [
+      "'Adding air conditioned air to the flow",
+      "Extracting air overboard",
+      "Adding avionics bay air",
+      "Passing air through a skin heat exchanger"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In closed-circuit configuration during normal flight, the system modulates the skin heat exchanger bypass valve to control cooling air temperature."
+  },
+  {
+    "question": "To enable Ram air to the mixture unit, The Ram air switch should be used:",
+    "options": [
+      "At any time",
+      "Only when differential pressure is less than 1 psi.",
+      "When pressure is greater than 1 psi diff",
+      "Only after outflow valve is fully opened"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Pack controller, primary channel failure.",
+    "options": [
+      "The secondary computer operates as a backup mode and regulation is not optimized",
+      ": The secondary computer takes over (all functions as normal)",
+      "Pack is lost",
+      "Pack outlet temperature is controlled at 15 deg.C"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Pack controller, secondary channel failure",
+    "options": [
+      "No effect on pack regulation backup mode is lost",
+      "Pack is lost",
+      "No effect (all modes still available)",
+      "Pack outlet temperature is controlled at 15 deg.C'"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Pack controller, primary and secondary channel failure",
+    "options": [
+      "Pack outlet temperature is controlled to between 5 and 30 deg.C by the anti-ice valve",
+      "The pack is closed",
+      "The packs deliver a fixed temperature of 20 deg.C"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Hot air press. reg. valve failed open",
+    "options": [
+      "Optimized regulation is lost",
+      "The temperature stays at the value selected",
+      "No effect",
+      "Cabin temperature will be controlled at the upper limit 30 deg.C"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Bleed air supplied from the APU (APU bleed valve open), the pack flow is automatically selected:",
+    "options": [
+      "High",
+      "Normal",
+      "Low",
+      "Econ. Flow"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Trim air valve, each one optimizes the temperature by:",
+    "options": [
+      "Adding hot air",
+      "Adding fresh air",
+      "Modulating of pack flow",
+      "Adding re-circulated air"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Temperature regulation of the temperature is ensured by a zone controller and two pack controllers, or two Air Conditioning System Controller (ACSC) . Temperature regulation is optimized via the hot air pressure regulating valve, and the trim air valves that add hot air, tapped upstream of the packs, to the air coming from the mixing unit."
+  },
+  {
+    "question": "Hot air pressure regulating valve:",
+    "options": [
+      "Regulates the pressure of hot air tapped upstream of the packs",
+      "Is spring loaded open in the absence of air",
+      "Opens automatically in case of duct overheat",
+      "Opens automatically if the cabin trim air valve fails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This pneumatically-operated and electrically-controlled valve regulates hot air pressure, which is tapped upstream of the packs. The ACSC 1 regulates this valve. In the absence of air, a spring keeps the valve closed. The valve closes if the HOT AIR pb-sw on the AIR COND panel is OFF."
+  },
+  {
+    "question": "Pack flow control valve:",
+    "options": [
+      "Is pneumatically operated and electrically controlled",
+      "Electrically operated and pneumatically controlled",
+      "Opens automatically during engine starting",
+      "Is spring loaded to open"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This valve is pneumatically-operated and electrically-controlled. It regulates the air flow in accordance with signals received from the pack controllers or the ACSC"
+  },
+  {
+    "question": "Engine flow demand, when the heating or cooling demand in one zone cannot be satisfied:",
+    "options": [
+      "The minimum idle must be increased manually",
+      "The minimum idle is increased automatically",
+      "In any case, flight idle is sufficient",
+      "The APU must be used to supply additional air"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ENGINE PRESSURE DEMAND When the cooling demand in one zone cannot be satisfied, if the bleed pressure is too low, the air conditioning system controller sends a pressure demand signal to both Engine Interface Units (EIU) to increase the minimum idle and to raise the bleed pressure. APU FLOW DEMAND When the APU bleed valve is open, the air conditioning system controller signals the APU’s Electronic Control Box (ECB) to increase the APU flow output when any zone temperature demand cannot be satisfied."
+  },
+  {
+    "question": "What is the Norm.Max. cabin altitude?",
+    "options": [
+      "8,000 ft",
+      "9,550 ft +/- 350 ft",
+      "14,000 ft",
+      "800 ft"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The controller automatically controls the cabin pressure. It limits the cabin pressure to approximately 8000 ft maximum during CRUISE mode and is optimized to support high airfield operations up to a pressure of 14100 ft during ground, climb and descent phases. The controller normally uses the landing elevation and the QNH from the FMGC, and the pressure altitude from ADIRS. If FMGC data are not available, the controller uses the captain BARO Reference from the ADIRS and the LDG ELEV selection. Pressurization is assumed through the following modes:"
+  },
+  {
+    "question": "What is the Max. negative Diff. pressure for the cabin?",
+    "options": [
+      "0 psi.",
+      "1 psi.",
+      "2 psi.",
+      "8.6 psi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "CABIN PRESSURE Maximum positive differential pressure…………………………………………………………………………..9.0 PSI Maximum negative Differentialressure……………………………………………………..-1.0 PSI Safety relief valve setting…………………………………………………………………………….. 8.6 PSI"
+  },
+  {
+    "question": "It is permissible to use simultaneously packs and Lp ground unit during long stops in a hot airfield",
+    "options": [
+      "Yes",
+      "No",
+      "Yes, if external temperature is greater than 50 deg.C",
+      "Yes, provided the airflow supplied by the ground cart is less than 1.2 kg/s"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FCOM-PRO-NOR-SOP-04- AIR CON it says"
+  },
+  {
+    "question": "What are the different sources of air for air conditioning and pressurization?",
+    "options": [
+      "Engine bleed air and recirculated air (only on ground)",
+      "Engine bleed air and recirculated air.",
+      "Engine bleed air and recirculated air, or if selected, APU bleed air and recirculated air",
+      "Engine bleed air only."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In normal operation, engine bleed air is the primary source for air conditioning and pressurization. On ground or when selected, the APU bleed air can be used as an alternate source. Recirculated cabin air is mixed with conditioned air to reduce load on the packs and improve efficiency."
+  },
+  {
+    "question": "During the exterior preflight on a warm day, in what position would you expect to find the avionics ventilation system INLET and EXTRACT valves to be in?",
+    "options": [
+      "Closed",
+      "Open",
+      "Closed or open regarding of the APU bleed valve",
+      "Closed or open"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What happens to the pack flow control valves during engine start?",
+    "options": [
+      "They must be selected off",
+      "They must be selected off on cold days only",
+      "They must be selected off on hot days only.",
+      "They automatically close."
+    ],
+    "correctAnswer": 3,
+    "explanation": "This valve is pneumatically-operated and electrically-controlled. It regulates the air flow in accordance with signals received from the pack controllers or the ACSC . In the absence of air pressure, a spring keeps the valve closed. The valve closes automatically in case of pack overheat (on ground only), ENGINE START, or operation of the fire or ditching pushbutton. The valve is controlled from the AIR COND panel."
+  },
+  {
+    "question": "The temperature of each aircraft zone is optimized by means of:",
+    "options": [
+      "A HOT AIR valve.",
+      "A ZONE control valve.",
+      "A PACK FLOW VALVE.",
+      "A TRIM AIR valve."
+    ],
+    "correctAnswer": 3,
+    "explanation": "These valves are electrically-controlled by the zone controller or the ACSC . A trim air valve, associated with each zone, adjusts the temperature by adding hot air. The cockpit trim air valve is controlled by the ACSC 1 , and the cabin trim air valves are controlled by the ACSC 2."
+  },
+  {
+    "question": "When does normal pressurization occur?",
+    "options": [
+      "After second engine start.",
+      "Pressurization occurs during taxi",
+      "Pressurization occurs during the takeoff roll.",
+      "After rotation."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When does normal depressurization occur?",
+    "options": [
+      "100 feet AGL above touchdown.",
+      "It is complete 1 minute after touchdown.",
+      "After flap retraction.",
+      "On landing touchdown"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Under what conditions should the pack flow controller be set to LO?",
+    "options": [
+      "With a low passenger load to reduce bleed air demand and improve fuel efficiency.",
+      "With a low passenger load to increase cabin temperature",
+      "With a high passenger load to reduce cabin temperature",
+      "In cold conditions to achieve a higher cabin temperature range."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Permits the selection of pack valve flow, according to the number of passengers and ambient conditions (smoke removal, hot or wet conditions) LO (80 %) – NORM (100 %) – HI (120 %"
+  },
+  {
+    "question": "Which statement is correct regarding illumination of the amber AFT ISOL VALVE fault light?",
+    "options": [
+      "Automatically closes the aft cargo compartment isolation valves.",
+      "Means that either the inlet or outlet isolation valve(s) disagrees with the switch position.",
+      "Indicates that the extract fan has stopped.",
+      "All of the above."
+    ],
+    "correctAnswer": 1,
+    "explanation": "AFT ISOL VALVE pb-sw The switch controls the isolation valves and the extraction fan. Auto : The inlet and outlet isolation valves open, extraction fan runs if there is no smoke detected in the aft cargo bay. OFF : The inlet and outlet isolation valves and the trim air valve close, the extraction fan stops. FAULT lt : The light, associated with the ECAM caution, comes on amber when either inlet or outlet valve is not in the selected position."
+  },
+  {
+    "question": "Pressurization controllers receive inputs from:",
+    "options": [
+      "LGCIU, ADIRU, FMGS, and EIU.",
+      "LGCIU’s and the MCDU.",
+      "LGCIU’s and pitot static sources.",
+      "MCDU and LGCIU’s."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cabin Pressure Control System Overview Two identical, independent digital controllers automatically control the system by maintaining the proper cabin pressure. They receive signals from: The Air Data Inertial Reference System (ADIRS) The Flight Management and Guidance Computer (FMGC) The Engine Interface Unit (EIU) The Landing Gear Control Interface Unit (LGCIU) When the system is in automatic or semi-automatic mode: One controller is active, The other is on standby. The controllers also generate signals for the Electronic Centralized Aircraft Monitoring (ECAM) system. For operation in manual mode: Each controller has a backup section, This backup is powered by an independent power supply in the controller N°1 position, The section includes a pressure sensor that generates the cabin altitude and pressure signal for the ECAM when MAN mode is selected. The controllers communicate with each other via a cross-channel link. (Note: The sentence “The controllers communicate with each other via a” is incomplete. Please provide the rest of that sentence if you’d like it included.)"
+  },
+  {
+    "question": "What computers control the cabin and cockpit conditioned air?",
+    "options": [
+      "Two zone controllers that pass information and requests to two pack controllers.",
+      "Two pack controllers that pass information and requests to three zone controllers.",
+      "Three zone controllers that pass information and instructions to two pack controllers for three zones.",
+      "One zone controller that passes information and instructions to two pack controllers for three zones."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Temperature regulation is automatic and controlled by one zone controller and two pack controllers, or the ACSC ."
+  },
+  {
+    "question": "When would you select RAM AIR ON?",
+    "options": [
+      "If additional cooling is required on the ground.",
+      "Dual pack failure or smoke removal.",
+      "When pack temperatures are too high.",
+      "When there is smoke in the cabin."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What happens when a temperature selector rotary knob is adjusted?",
+    "options": [
+      "A signal is sent to the zone controller requesting a different temperature.",
+      "Nothing as there is no relationship between a temperature selector knob and the trim air valve.",
+      "The associated trim air valve immediately moves to a different position."
+    ],
+    "correctAnswer": 0,
+    "explanation": "CABIN TEMPERATURE CONTROL The flight crew uses the temperature selectors on the air conditioning panel to select the reference temperatures. The zone controller or the ACSC computes a temperature demand from the selected temperature and the actual temperature. The reference temperatures are then fine-tuned for each cabin zone through the temperature control panel installed on the FAP."
+  },
+  {
+    "question": "With APU BLEED ON and engine BLEED switches ON with engines running, what is the position of the engine bleed valves?",
+    "options": [
+      "Closed",
+      "Open",
+      "Depends on the crossbleed selector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Air from the APU load compressor is available on ground and in flight. The APU bleed valve operates as a shut-off valve to control APU bleed air. The APU BLEED pb-sw, on the AIR COND panel, controls the APU bleed valve. When the flight crew selects ON with the pushbutton, APU bleed air supplies the pneumatic system, if the APU speed is above 95 %. This opens the crossbleed valve and closes the engine bleed automatically."
+  },
+  {
+    "question": "Pressurization is normally automatic. Can you interfere with it?",
+    "options": [
+      "Yes, CABIN PRESS MODE SEL to OVERRIDE and MAN V/S CTL toggle switch.",
+      "Yes, manually set landing elevation using the LND ELEV AUTO selector.",
+      "Both are correct."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Air from the APU load compressor is available on ground and in flight. The APU bleed valve operates as a shut-off valve to control APU bleed air. The APU BLEED pb-sw, on the AIR COND panel, controls the APU bleed valve. When the flight crew selects ON with the pushbutton, APU bleed air supplies the pneumatic system, if the APU speed is above 95 %. This opens the crossbleed valve and closes the engine bleed automatically. If both automatic systems fail, the flight crew may use the CABIN PRESS control panel to take over manual control of cabin pressurization. • Release the MODE SEL pushbutton to select MAN, and • Push the MAN V/S CTL switch UP or DN to increase or decrease cabin altitude."
+  },
+  {
+    "question": "Under what conditions should the pack flow controller be set to HI?",
+    "options": [
+      "In cold conditions to achieve a higher cabin temperature range.",
+      "With a low passenger load to increase cabin air flow.",
+      "With a high passenger load in hot conditions in order to help reduce the cabin temperature."
+    ],
+    "correctAnswer": 2,
+    "explanation": "PACK FLOW selector Permits the selection of pack valve flow, according to the number of passengers and ambient conditions (smoke removal, hot or wet conditions) LO (80 %) – NORM (100 %) – HI (120 %) HI in conditions of high passenger load, extreme temperatures, increased ventilation demand,"
+  },
+  {
+    "question": "What is the function of the ram air valve?",
+    "options": [
+      "'Ventilation while on the ground.",
+      "Emergency smoke removal and ventilation in the event of dual pack failure.",
+      "Avionics cooling.",
+      "Cargo ventilation & avionics cooling."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Placing the EXTRACT push button to override:",
+    "options": [
+      "De-energizes the extract fan",
+      "Places the avionics ventilation system in the closed configuration.",
+      "Insures the extract fan will continue to be energized.",
+      "Places the avionics ventilation system in the open configuration."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The Ram Air valve:",
+    "options": [
+      "Should be opened for increased ventilation while on the ground.",
+      "Will open automatically after engine start.",
+      "Should be opened for increased ventilation while in flight.",
+      "Must be manually activated."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What limitation is associated with the ram air valve?",
+    "options": [
+      "Do not open if cabin pressure is greater than 1 psi.",
+      "Only open while on the ground.",
+      "Will not open if the DITCHING switch is off.",
+      "Operation is automatic."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "With the pressurization system in the automatic mode, which valves are closed when the ditching push button is selected on?",
+    "options": [
+      "All valves below the water line.",
+      "APU inlet.",
+      "The engine bleed valves.",
+      "Only the avionics cooling valves."
+    ],
+    "correctAnswer": 0,
+    "explanation": "DITCHING guarded pushbutton Normal : The system functions normally. ON : The operating system sends a “close” signal to the outflow valve, emergency ram air inlet, avionics ventilation inlet and extract valves, pack flow control valves. Note: The outflow valve will not close automatically, if it is under manual control. CAUTION: If the ditching pb is set to ON, with the low pressure ground cart connected and all doors closed, a differential pressure will build up."
+  },
+  {
+    "question": "What is the maximum negative differential pressure for the cabin?",
+    "options": [
+      "0 psi.",
+      "1 psi.",
+      "2 psi.",
+      "3 psi."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The HOT AIR valve push button controls:",
+    "options": [
+      "The trim air valve.",
+      "The hot air manifold.",
+      "The engine bleed valves.",
+      "The pack flow control valves."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Both pressurization auto controllers are set by the active flight plan loaded in the MCDU. The QNH entry on the MCDU Approach Performance page refines the depressurization schedule for the landing.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The flight crew monitors the operation of the system, but does nothing to control it. Air pressure in the cabin follows external schedules that the system receives as signals from the Flight Management and Guidance System (FMGS). When FMGS data is not available for automatic pressurization, the crew only needs to select the landing field elevation. The pressurization system then uses the manually-selected landing field elevation for internal schedules."
+  },
+  {
+    "question": "Aft cargo indications may be found on which ECAM page(s)?",
+    "options": [
+      "Only the CRUISE page.",
+      "Only the BLEED page.",
+      "Only the CAB PRESS page.",
+      "The CRUISE page and the COND page."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Avionics ventilation system indications may be found on which ECAM page(s)?",
+    "options": [
+      "Only the BLEED page.",
+      "Only the CAB PRESS page.",
+      "The in-flight ECAM cruise page.",
+      "The in-flight ECAM cruise page and the CAB PRESS pages."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "When APU is supplying the packs, the pack controller sends a demand signal to increase airflow when a zone temperature cannot be satisfied. This signal is sent to the:",
+    "options": [
+      "Pack Ram Air Inlet Flap.",
+      "APU ECB.",
+      "Pack Outflow Control Valve.",
+      "Engine interface units EIU’s'"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "In case of zone controller primary and secondary channel failure, what temperatures are maintained by Packs 1 and 2?",
+    "options": [
+      "15 deg.C for both.",
+      "25 deg.C both.",
+      "20 deg.C for Pack one and 10 deg.C for Pack two",
+      "24 deg.C for Pack one and 15 deg.c for Pack two."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Optimized regulation is lost. Trim air valves are driven to the fully closed position. Pack 1 controls the cockpit temperature to the selected value and pack 2 controls the cabin temperature (FWD and AFT) to the mean value of the selected temperatures. Pack 1: ~20°C Pack 2: ~10°C"
+  },
+  {
+    "question": "The PACK FLOW controller is set to NORM and yet the ECAM display shows PACK FLOW to be high. How is this possible?",
+    "options": [
+      "As the engines are not running the PACK FLOW indicators are at the position they were selected to at the last shut down.",
+      "As no bleed air is flowing the PACK FLOW valves are spring loaded to the fully open position.",
+      "HI flow is automatically selected regardless of PACK FLOW selector position because air is only being supplied by the APU.",
+      "With cold outside air conditions the PACK FLOW is automatically increased to help increase the cabin temperature."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When would you select PACK FLOW to HI?",
+    "options": [
+      "Smoke removal or hot/humid conditions.",
+      "When passengers are complaining it is too cold.",
+      "Above FL 350.",
+      "Above FL 250"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Permits the selection of pack valve flow, according to the number of passengers and ambient conditions (smoke removal, hot or wet conditions) LO (80 %) – NORM (100 %) – HI (120 %)"
+  },
+  {
+    "question": "Which of the following statements is correct concerning conditioned air?",
+    "options": [
+      "Conditioned air and trim air are mixed then distributed to each zone.",
+      "Recirculated air, conditioned air and hot trim air are mixed then distributed to each zone.",
+      "Hot trim air is added to the mixing unit before distribution to each zone.",
+      "Recirculating fans draw cabin air to a mixing unit where conditioned air is added."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "How many temperature selectors are there on the A320? How many temperature zones are there?",
+    "options": [
+      "Three rotary temperature selectors and one zone.",
+      "Three rotary temperature selectors, one each for the cockpit zone, the forward cabin zone, and the aft cabin zone.",
+      "Two rotary temperature selectors, one for the cockpit and first class zone and one for the aft cabin zone.",
+      "Four rotary temperature selectors and four zones."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The temperature selectors are located in:",
+    "options": [
+      "The cockpit",
+      "The cabin",
+      "Both",
+      "Only on the CIDS panel"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "During normal flight, the avionics ventilation system controls the temperature of the cooling air by:",
+    "options": [
+      "Adding air conditioned air to the flow.",
+      "Extracting air over board.",
+      "Adding an avionics bay air.",
+      "Passing air through a skin heat exchanger."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Placing the avionics ventilation system in the smoke configuration:",
+    "options": [
+      "Opens the #1 GLC.",
+      "Opens the cargo under-floor valve.",
+      "Opens the #2 GLC.",
+      "De-energizes the blower fan, extract fan runs, and opens the air conditioning extract valves."
+    ],
+    "correctAnswer": 3,
+    "explanation": "SMOKE CONFIGURATION When the smoke detector detects smoke in the avionics ventilation air the BLOWER and the EXTRACT FAULT lights come on. When both the BLOWER and the EXTRACT pushbuttons are set to the OVRD position, the air conditioning system supplies cooling air, which is then exhausted overboard. The blower fan stops."
+  },
+  {
+    "question": "How can you change controllers during flight?",
+    "options": [
+      "Cycle the LDG ELEV AUTO knob out of the AUTO position then back to AUTO.",
+      "Cycle the CABIN PRESS MODE SEL pushbutton to the MAN position then back to AUTO.",
+      "Cycle the cabin pressurization MAN V/S CTL switch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MODE SEL pb AUTO: Automatic mode is operating. One of the two systems controls the outflow valve. MAN: This legend appears in white, and FAULT does not come on. The flight crew then uses the MAN V/S CTL selector to control the outflow valve. Note: Switching the MODE SEL pb to MAN, for at least 10 s, then returning it to AUTO will select the other system. FAULT: Amber light and the ECAM caution only when both automatic systems are faulty."
+  },
+  {
+    "question": "Hot air “FAULT” light illuminates on the air conditioning panel.",
+    "options": [
+      "The hot air press reg. valve opens and the trim air valves close.",
+      "The hot air press reg. valve closes and the trim air valves open.",
+      "The hot air press reg. valve closes and the trim air valves close."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "How many trim air valves are there?",
+    "options": [
+      "One trim air valve.",
+      "Three: one each for the cockpit zone, the forward cabin zone, and the aft cabin zone.",
+      "Two: one for the cockpit and first class zone, and one for the cabin zone.",
+      "Four: one each for the cockpit zone, the first class zone, and two for the aft zone."
+    ],
+    "correctAnswer": 1,
+    "explanation": "3 trim air valve, one each associated with each zone."
+  },
+  {
+    "question": "What position do the pack valves go to in the event of a loss of the bleed system pressure?",
+    "options": [
+      "They remain in their last position.",
+      "Full open.",
+      "Mid position.",
+      "Closed."
+    ],
+    "correctAnswer": 3,
+    "explanation": "This valve is pneumatically-operated and electrically-controlled. It regulates the air flow in accordance with signals received from the pack controllers or the ACSC .In the absence of air pressure, a spring keeps the valve closed. The valve closes automatically in case of pack overheat (on ground only), engine start, or operation of the fire or ditching pushbutton. The valve is controlled from the AIR COND panel."
+  },
+  {
+    "question": "The RAM AIR switch should be used:",
+    "options": [
+      "At any time.",
+      "Only when differential pressure is less than 1 psi.",
+      "When differential pressure is more than 1 psi.",
+      "Only after outflow valve is fully opened"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is the function of the Pack Flow selector?",
+    "options": [
+      "Allows the pilot to increase pack flow but will not allow a manual decrease in flow if needed by the aircraft demands.",
+      "Always allows high flow regardless of switch position when the APU is used for air conditioning.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Which configuration is the avionics ventilation system in while airborne with no abnormals present?",
+    "options": [
+      "Open.",
+      "Smoke.",
+      "Fire.",
+      "Closed."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is the maximum altitude associated with the pressurization system?",
+    "options": [
+      "39,100 feet",
+      "39,500 feet",
+      "41,000 feet",
+      "41,100 feet"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Trim air valves are controlled by:",
+    "options": [
+      "The zone controller.",
+      "Anti-ice valve.",
+      "Hot air pressure regulating valve.",
+      "The pack controller"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These valves are electrically-controlled by the zone controller or the ACSC. A trim air valve, associated with each zone, adjusts the temperature by adding hot air. The cockpit trim air valve is controlled by the ACSC 1 , and the cabin trim air valves are controlled by the ACSC 2."
+  },
+  {
+    "question": "Which statement is TRUE concerning the cargo compartment ventilation?",
+    "options": [
+      "Both cargo compartments are pressurized and heated using both cabin air and hot trim air.",
+      "Recirculated air, conditioned air, and hot trim air are mixed then distributed to each cargo compartment.",
+      "Only the aft cargo compartment is heated and ventilated. Cabin ambient air is mixed with hot trim air and drawn through isolation valves by extraction fans."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The APU BLEED FAULT indicates that the main APU controller is in fault.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 1,
+    "explanation": "This alert triggers when the APU is running and the position of the APU bleed valve disagrees with the selected position of the APU BLEED pb-sw"
+  },
+  {
+    "question": "Aft cargo ventilation is controlled by:",
+    "options": [
+      "The aft cargo rotary selector knob.",
+      "The cargo ventilation controller.",
+      "The zone controller and the SDCU.",
+      "The cargo ventilation controller and the aft cargo rotary selector knob."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The vent fan runs any time there is a normal ships power and the isolation valves are open.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": "FANS Two electric fans continuously circulate air around the avionics equipment, when the aircraft is electrically supplied. The Fan Speed Controller (FSC) controls the avionics ventilation fan speed as a function of temperature:: 1. High speed when the ventilation air temperature is above +40 °C (104 °F ) 2. Low speed when the ventilation air temperature is below +35 °C ( 95 °F)"
+  },
+  {
+    "question": "The cabin zone temperature sensors are ventilated by the air extracted by the lavatory and galley fans.",
+    "options": [
+      "True.",
+      "False."
+    ],
+    "correctAnswer": 0,
+    "explanation": "An extraction fan draws ambient cabin air through the lavatories and galleys and exhausts it near the outflow valve. The extraction fan runs continually when electric power is available"
+  },
+  {
+    "question": "Placing the BLOWER push button to override:",
+    "options": [
+      "Insures the blower fan will continue to run.",
+      "Places the avionics ventilation system in the open configuration",
+      "De-energizes the blower fan.",
+      "Places the avionics ventilation system in the closed configuration."
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the BLOWER pushbutton switch is set at OVRD, the blower fan is stopped and the extract fan continues to run. When the EXTRACT pushbutton switch is set at OVRD, the extract fan is controlled directly from the pushbutton. Both fans continue to run"
+  },
+  {
+    "question": "Pressurization indications are found on which ECAM page(s)?",
+    "options": [
+      "BLEED page.",
+      "Only on the CAB PRESS page.",
+      "The in-flight ECAM cruise page and the CAB PRESS page.",
+      "On the CAB PRESS & BLEED pages."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "How many outflow valves are there?",
+    "options": [
+      "One valve with one door",
+      "One valve with two doors.",
+      "Two valves with only one door visible.",
+      "Two valves (one main + one back-up) with only two doors visible."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "At what cabin altitude do you get an ECAM warning?",
+    "options": [
+      "8,800 feet.",
+      "9,000 feet",
+      "9,550 feet",
+      "14,000 feet."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When the pack flow control knob is positioned to HI, air flow is:",
+    "options": [
+      "80% of normal rate.",
+      "100% of normal rate.",
+      "120% of normal rate.",
+      "150% of normal rate."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If you select a position other than the AUTO detent on the LDG ELEV AUTO selector, how can you see the actual landing elevation value?",
+    "options": [
+      "On the ECAM CRUISE",
+      "On the PRESS page",
+      "On the ECAM CRUISE or the PRESS page."
+    ],
+    "correctAnswer": 2,
+    "explanation": "LDG ELEV Knob AUTO: The pressurization system uses the FMGS data to construct an optimized pressure schedule. To exit the AUTO position: Pull out and turn the selector. Other positions: The pressurization schedule does not use the landing elevation from the FMGS, but instead uses the landing elevation selected with this knob (from -2,000 to +14,000 ft) as its reference. Note: The LDG ELEV knob scale is only given as an indication; refer to the ECAM information for accurate adjustment"
+  },
+  {
+    "question": "What will cause the ENG BLEED fault light to come on?",
+    "options": [
+      "Overpressure (downstream of bleed valve)",
+      "Bleed overheat",
+      "Wing or engine leak on associated side."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What does the CARGO HEAT HOT AIR FAULT light indicate?",
+    "options": [
+      "A duct overheat is detected.",
+      "The Aft Cargo Pressure Regulating valve closes.",
+      "The system will reset if the ISOL VALVE switch is ON.",
+      "All of above."
+    ],
+    "correctAnswer": 3,
+    "explanation": "HOT AIR pb AUTO: The pressure regulating valve regulates the hot air pressure. OFF: The pressure regulating valves and the trim air valve close. The fault circuit is reset. FAULT light (Amber): The amber light and ECAM caution come on when a duct overheat is detected at 88 °C (190 °F). The light goes out when the temperature drops below 70 °C (158 °F) and OFF is selected. Then, if the pushbutton is set to ON, the system resets."
+  },
+  {
+    "question": "During Ground function operation, the outflow valve is:",
+    "options": [
+      "Fully open.",
+      "Fully closed.",
+      "Positioned according to FMGS demands."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The outflow valve is powered by:",
+    "options": [
+      "One of two electric motors.",
+      "One of three electric motors.",
+      "Three mechanically linked electric motors."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The purpose of the safety valve is to avoid:",
+    "options": [
+      "Excessive positive pressure differential.",
+      "Excessive negative differential.",
+      "Both are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Two independent pneumatic safety valves prevent cabin pressure from going too high (8.6 PSI above ambient) or too low (1 PSI below ambient). They are located on the rear pressure bulkhead, above the flotation line"
+  },
+  {
+    "question": "When landing elevation is set to AUTO, the landing elevation is sent to the controller from:",
+    "options": [
+      "FMGS.",
+      "FCU.",
+      "ADIRS.",
+      "Captain baro ref."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The flight crew monitors the operation of the system, but does nothing to control it. Air pressure in the cabin follows external schedules that the system receives as signals from the Flight Management and Guidance System (FMGS). When FMGS data is not available for automatic pressurization, the crew only needs to select the landing field elevation. The pressurization system then uses the manually-selected landing field elevation for internal schedules."
+  },
+  {
+    "question": "The mixing unit is connected to:",
+    "options": [
+      "Packs, cabin air, emergency ram air inlet and Lp ground connector",
+      "Packs, emergency ram air inlet and Lp ground connector",
+      "Packs and cabin air",
+      "Pack 1 and pack 2 only."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Once set to “ON” the air conditioning packs operate:",
+    "options": [
+      "Automatically and independently of each other",
+      "Normally, but the output of one affects the other",
+      "Automatically, pack one as a master, pack two as a slave",
+      "Automatically, pack two as a master, pack one as a slave."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The two packs operate automatically and independently of each other. Pack operation is controlled by signals coming from the pack controller or the Air Conditioning System Controller (ACSC). Warm pre-conditioned bleed air enters the cooling path via the pack flow control valve, and is ducted to the primary heat exchanger. Then, the cooled bleed air enters the compressor section of the air-cycle machine and is compressed to a higher pressure and temperature. It is cooled again in the main heat exchanger and enters the turbine section, where it expands and, in expanding, generates power to drive the compressor and cooling air fan. The removal of energy during this process reduces air temperature, resulting in very low air temperature at turbine discharge. L3 A water separator system dries the air before it enters the turbine section."
+  },
+  {
+    "question": "Emergency ram air inlet. When set to “ON” the ram air valve will open and supply airflow:",
+    "options": [
+      "In any case",
+      "Diff. press < 1 psi, and ditching not selected",
+      "Provided ditching is not selected",
+      "Provided ditching is selected."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Cond. Zone regulator fault (primary channel failed):",
+    "options": [
+      "Cabin zone is at fixed temperature",
+      "Packs are at fixed temperature",
+      "Secondary channel operates as back up and operation is as normal",
+      "The packs deliver a fixed temperature. 20 deg.C for pack one and 10 deg.C for pack two"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Optimized regulation is lost. Trim air valves are driven to the fully closed position. Pack 1 controls the cockpit temperature to the selected value and pack 2 controls the cabin"
+  },
+  {
+    "question": "Temperature control is automatic and is regulated by:",
+    "options": [
+      "Zone controllers",
+      "Pack 1 and 2 controllers",
+      "Zone controllers, pack 1 and 2 controllers",
+      "The pack flow control valves only."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The temperature in the flight deck and in the cabin can be selected from the cockpit’s AIR COND panel. Temperature regulation of the temperature is ensured by a zone controller and two pack controllers, or two Air Conditioning System Controller (ACSC) . Temperature regulation is optimized via the hot air pressure regulating valve, and the trim air valves that add hot air, tapped upstream of the packs, to the air coming from the mixing unit. A temperature control panel is also available on the Forward Attendant Panel (FAP). During cruise, the cabin crew can modify each cabin zone temperature that is selected from the cockpit, with a limited authority of ± 2.5 °C. (± 4.5 °F). Low-pressure air is supplied to the mixing unit by a ground connection."
+  },
+  {
+    "question": "If a pack controller fails (primary and secondary channel failure), the pack outlet air temperature is controlled by:",
+    "options": [
+      "Ram Air Valve",
+      "Hot air pressure regulating valve",
+      "Anti-ice valve",
+      "Trim air valve."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pack Schematic – Anti-Ice Valve (not related to engine or wing anti-ice) In the DSC-21-10-20 Pack Schematic (simplified) diagram, you’ll notice an anti-ice valve in the system. This valve is not connected to engine or wing anti-ice systems. Purpose: If the pack outlet temperature drops below 0°C, there’s a risk of ice buildup in the ducting. To prevent this, the anti-ice valve introduces hot bleed air just downstream of the pack turbine. This ensures the temperature stays above 0°C, avoiding ice formation in the air conditioning system."
+  },
+  {
+    "question": "The zone controller optimizes temperature by action on:",
+    "options": [
+      "Pack anti-ice valve",
+      "Trim air valve",
+      "Pack flow control valve",
+      "Hot air pressure regulating valve"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Temperature regulation is optimized via the hot air pressure regulating valve, and the trim air valves that add hot air, tapped upstream of the packs, to the air coming from the mixing unit. A temperature control panel is also available on the Forward Attendant Panel (FAP). During cruise, the cabin crew can modify each cabin zone temperature that is selected from the cockpit, with a limited authority of ± 2.5 °C. (± 4.5 °F). Low-pressure air is supplied to the mixing unit by a ground connection"
+  },
+  {
+    "question": "When using APU bleed to supply the packs, with the pack flow selector at LO, the pack airflow is:",
+    "options": [
+      "80% of normal",
+      "Normal",
+      "120% of normal",
+      "110% of normal"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The pack flow control valve closed automatically in case of:",
+    "options": [
+      "Pack overheat, engine starting, or operation of the fire or ditching push button",
+      "Bleed valve failure, pack outlet pressure increase",
+      "Trim air valve failure",
+      "All of the above."
+    ],
+    "correctAnswer": 3,
+    "explanation": "This valve is pneumatically-operated and electrically-controlled. It regulates the air flow in accordance with signals received from the pack controllers or the ACSC . In the absence of air pressure, a spring keeps the valve closed. The valve closes automatically in case of pack overheat (on ground only), engine start, or operation of the fire or ditching pushbutton. The valve is controlled from the AIR COND panel."
+  },
+  {
+    "question": "In case of trim air system fault (zone controller primary channel failure), the secondary channel of the zone controller regulated the zone temperature at:",
+    "options": [
+      "14 deg.C",
+      "24 deg.C",
+      "15 deg.C",
+      "10 deg.C"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "In case of total zone controller failure:",
+    "options": [
+      "Hot air and trim air valves open and packs deliver air at a fixed temperature (15 deg.C pack 1 and 10 deg.pack2)",
+      "Hot air and trim air valves close and packs deliver air at a fixed temperature (15 deg.C pack 1 and 10 deg.pack2)",
+      "Hot air and trim air valves close and packs deliver air at a fixed temperature (20 deg.C pack 1 and 10 deg.pack2)",
+      "Hot air and trim air valves open and packs deliver air at a fixed temperature (20 deg.C pack 1 and 10 deg.pack2)"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "During landing run, Ram Air Inlet flaps open when speed is less than:",
+    "options": [
+      "77 kts (after 30 seconds delay",
+      "70 kts (after 1 minute delay)",
+      "70 kts (after 20 seconds delay)",
+      "85 kts (after 20 seconds delay)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "During takeoff, the ram air inlet flap closes when takeoff power is set, and the main landing gear struts are compressed. During landing, it closes as soon as the main landing gear struts are compressed, as long as speed is at or above 70 kt. It opens 20 s after the speed drops below 70 kt."
+  },
+  {
+    "question": "The ditching switch when selected sends a closure signal to:",
+    "options": [
+      "Outflow valve",
+      "Ram air inlet and ventilation extract valves",
+      "The pack flow control valves",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "To prepare for ditching, the flight crew must press the DITCHING pb on the CABIN PRESS control panel to close the outflow valve, the emergency ram air inlet, the avionics ventilation inlet and extract valves, the pack flow control valves, and the FWD cargo outlet isolation valve"
+  },
+  {
+    "question": "In flight with pressure controller 1 in use, if it fails:",
+    "options": [
+      "You have to use the manual control",
+      "Transfers automatically to controller 2",
+      "You have to select manually controller 2",
+      "You have to set the landing elevation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "If Cabin Pressure Controller 1 is in use during flight and fails, the system will: Automatically switch to Controller 2. Details: The standby controller (Controller 2) will automatically take over control of cabin pressurization. A message will appear on ECAM, indicating the failure (e.g., CAB PRESS CONT 1 FAULT). Pressurization continues normally under Controller 2—no immediate action required from the crew unless instructed by ECAM."
+  },
+  {
+    "question": "In normal operation, pressurization is:",
+    "options": [
+      "Fully automatic",
+      "Manually controlled",
+      "Automatic, but landing elevation must be manually set",
+      "Remaining automatic only with CPC 1 is in use."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The flight crew monitors the operation of the system, but does nothing to control it. Air pressure in the cabin follows external schedules that the system receives as signals from the Flight Management and Guidance System (FMGS). When FMGS data is not available for automatic pressurization, the crew only needs to select the landing field elevation. The pressurization system then uses the manually-selected landing field elevation for internal schedule"
+  },
+  {
+    "question": "During ground function operation, the outflow valve is:",
+    "options": [
+      "Fully open",
+      "Fully closed",
+      "Positioned accordingly to FMGS demands",
+      "Operating in abort mode"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "To see the operation of the outflow valve, it is necessary to call ECAM:",
+    "options": [
+      "Cond page",
+      "Bleed page",
+      "Press page",
+      "Vent page"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Two identical, independent, automatic digital pressurization controllers are used for system control:",
+    "options": [
+      "One controller active, one in standby",
+      "Both controllers monitored by FMGC",
+      "No controller for climb phase and No.2 controller in cruise and descent",
+      "No.1 controller for climb and No.2 for descent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Two identical, independent, digital controllers automatically control the system, by maintaining the proper cabin pressure. They receive signals from the Air Data Inertial Reference System (ADIRS), the Flight Management and Guidance Computer (FMGC), the Engine Interface Unit (EIU), and the Landing Gear Control Interface Unit (LGCIU). When the system is in automatic or semi-automatic mode, one controller is active, the other is on standby. The controllers also generate signals for the Electronic Centralized Aircraft Monitoring (ECAM). For operation in manual mode, each controller has a backup section, which is powered by an independent power supply in the controller N°1 position. This section also has a pressure sensor that generates the cabin altitude and pressure signal for the ECAM, when MAN mode is selected. The controllers communicate with each other via a cross-channel link."
+  },
+  {
+    "question": "Which controller generates excess cabin altitude and pressure signals for ECAM indication in manual mode:",
+    "options": [
+      "Both",
+      "No.1",
+      "No.2",
+      "Neither"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Two identical, independent, digital controllers automatically control the system, by maintaining the proper cabin pressure. They receive signals from the Air Data Inertial Reference System (ADIRS), the Flight Management and Guidance Computer (FMGC), the Engine Interface Unit (EIU), and the Landing Gear Control Interface Unit (LGCIU). When the system is in automatic or semi-automatic mode, one controller is active, the other is on standby. The controllers also generate signals for the Electronic Centralized Aircraft Monitoring (ECAM). For operation in manual mode, each controller has a backup section, which is powered by an independent power supply in the controller N°1 position. This section also has a pressure sensor that generates the cabin altitude and pressure signal for the ECAM, when MAN mode is selected. The controllers communicate with each other via a cross-channel link."
+  },
+  {
+    "question": "The safety valves are operated:",
+    "options": [
+      "Electrically",
+      "Hydraulically",
+      "Pneumatically",
+      "By the FMGC"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Even in manual mode, Controller 1’s backup section remains active and powered by an independent power supply to ensure ECAM still receives critical pressure information"
+  },
+  {
+    "question": "The purpose of the safety valves is to avoid:",
+    "options": [
+      "Excessive positive differential pressure",
+      "Excessive negative differential pressure",
+      "All of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Two independent pneumatic safety valves prevent cabin pressure from going too high (8.6 PSI above ambient) or too low (1 PSI below ambient). They are located on the rear pressure bulkhead, above the flotation line."
+  },
+  {
+    "question": "When mode selector is selected to manual, the outflow valve is controlled by signals sent via controller 1 or 2",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In manual mode, the flight crew controls the cabin altitude via the manual motor of the outflow valves, by operating controls on the pressurization control panel"
+  },
+  {
+    "question": "On ECAM Cab. press page, the outflow valve indicator changes to amber if:",
+    "options": [
+      "It is fully closed",
+      "It is fully open on the ground",
+      "It is fully open in flight",
+      "It is not fully open on the ground"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "On ECAM Cab. press page, the safety valve indication changes to amber if:",
+    "options": [
+      "Both safety valves are fully open",
+      "Both safety valves do not open",
+      "Both safety valves are fully closed",
+      "One safety valve is open."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "On ECAM Cab. press page, the cabin altitude indication changes to red when cabin altitude is:",
+    "options": [
+      "> 14,000 ft",
+      "> 12,500 ft",
+      "> 10,000 ft",
+      ">9,550 ft"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Following a system 1 fault:",
+    "options": [
+      "Master caution is activated and ECAM actions must be taken by the crew",
+      "The crew manually operates the system",
+      "System 2 must be selected by the crew",
+      "System 2 takes over automatically without any crew action"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The pressure safety valve opens at:",
+    "options": [
+      "8.06 psi",
+      "8.6 psi",
+      "9.0 psi",
+      "7.0 psi"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "After the engine start, the Pack Flow Control Valves automatically open, however on the ground, reopening of the valves is delayed for _____ after the first engine start.",
+    "options": [
+      "30 seconds",
+      "45 seconds",
+      "50 seconds",
+      "60 seconds"
+    ],
+    "correctAnswer": 0,
+    "explanation": "After the engine start, the Pack Flow Control Valves automatically open. However, on the ground, the reopening of these valves is delayed for a specific period after the first engine start, depending on the aircraft’s Manufacturer Serial Number (MSN) range. Specifically: For aircraft within the MSN ranges of 02624-02907, 03271-03305, 03344, 03551, 03620-03687, 03822-03918, 03970, 04020-04052, 04089, 04121, 04164-04237, and 06446-06803, the reopening of the valves on the ground is delayed for 30 seconds to prevent an additional pack closure cycle during the second engine start. For aircraft within the MSN ranges of 07459-08167 and 08202-08917, this delay is extended to 60 seconds for the same reason. The purpose of this delay is to avoid an unnecessary pack closure cycle when the second engine is started. The pack flow control valve typically closes immediately on the starting engine side if the crossbleed valve is closed, when the engine mode selector is set to IGN (or CRK), and remains closed until N2 is less than 50%. If the crossbleed valve is open during engine start, both pack flow control valves will close."
+  },
+  {
+    "question": "The Ram Air Inlet Flaps remain open during takeoff and landing to allow extra airflow during high power situations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the sources, the ram air inlet flap’s behaviour during takeoff and landing is as follows: The ram air inlet flap closes during takeoff and landing. The primary reason for this closure is to avoid the ingestion of foreign matter. During takeoff, the flap closes when takeoff power is set and the main landing gear struts are compressed. During landing, it closes as soon as the main landing gear struts are compressed, provided the speed is at or above 70 kt. It then opens 20 seconds after the speed drops below 70 kt. Therefore, the flaps are designed to close, not remain open, during these high-power phases to protect the system."
+  },
+  {
+    "question": "The temperature of the air that exits the compressor section is displayed above the Pack Flow. It normally displays green, but displays amber for temperatures over:",
+    "options": [
+      "180 deg.C",
+      "200 deg.C",
+      "230 deg.C",
+      "250 deg.C"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "The trim air valves are _____ controlled by the zone controller",
+    "options": [
+      "Electrically",
+      "Pneumatically",
+      "Hydraulically",
+      "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "The avionics ventilation system is not capable of using external air to provide cooling airflow",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FANS Two electric fans continuously circulate air around the avionics equipment, when the aircraft is electrically supplied. The Fan Speed Controller (FSC) controls the avionics ventilation fan speed as a function of temperature:: 1. High speed when the ventilation air temperature is above +40 °C (104 °F ) 2. Low speed when the ventilation air temperature is below +35 °C ( 95 °F)"
+  },
+  {
+    "question": "During flight below _____, the Ram Air Valve can provide an emergency source of conditioned air during non-pressurized flight.",
+    "options": [
+      "5,000 feet",
+      "8,000 feet",
+      "10,000 feet",
+      "12,500 feet"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Temperature regulation of the Packs is automatic, and controlled by ….",
+    "options": [
+      "Associated Pack controller.",
+      "Associated Zone controller.",
+      "Both, the associated Pack controller and the Zone controller.",
+      "The associated Air conditioning system controller as there are no Pack Controllers or Zone Controllers on new A320 aircrafts."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The temperature in each aircraft zone is controlled by the Air Conditioning System Controllers, and optimized by regulating",
+    "options": [
+      "A HOT AIR PRESSURE regulating valve.",
+      "A ZONE TRIM AIR valve.",
+      "A PACK FLOW CONTROL valve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The temperature in each aircraft zone is controlled by the Air Conditioning System Controllers (ACSC). Temperature regulation is further optimized through the modulation of specific components. Specifically, the sources state: Temperature regulation is optimized via the hot air pressure regulating valve, and the trim air valves. The Hot-Air Pressure-Regulating Valve regulates the pressure of hot air, which is tapped upstream of the packs. This valve is regulated by ACSC 1. The Trim Air Valves are electrically controlled by the zone controller or the ACSC. A trim air valve is associated with each zone and adjusts the temperature by adding hot air. For instance, the cockpit trim air valve is controlled by ACSC 1, and the cabin trim air valves are controlled by ACSC 2. Therefore, considering the question’s emphasis on “each aircraft zone” and the direct role of the trim air valves in adjusting temperature for individual zones, the most precise answer among the given options is the Zone Trim Air Valve."
+  },
+  {
+    "question": "How many temperature selectors are there on the A320? How many temperature zones are there?",
+    "options": [
+      "Three rotary temperature selectors and one zone.",
+      "Three rotary temperature selectors, one each for the cockpit zone, the forward cabin zone, and the aft cabin zone.",
+      "Two rotary temperature selectors, one for the cockpit and first class zone and one for the aft cabin zone.",
+      "Four rotary temperature selectors and four zones."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "There are three Trim Air valves, one for Cockpit zone and one each for FWD and AFT cabin zones. Trim air valves optimize the temperature by:",
+    "options": [
+      "Adding hot air",
+      "Adding FRESH air",
+      "Modulating the pack flow",
+      "Adding re-circulated CABIN air"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The trim air valves play a crucial role in optimising the temperature within each aircraft zone. As you’ve noted, there is one trim air valve associated with each zone: the Cockpit, Forward Cabin, and Aft Cabin. Here’s how they optimise the temperature: The Air Conditioning System Controllers (ACSC) or the zone controller control these valves electrically. Their primary function is to adjust the temperature by adding hot air. This hot air is tapped from upstream of the packs. Specifically, the cockpit trim air valve is controlled by ACSC 1, while the cabin trim air valves (for FWD and AFT cabin) are controlled by ACSC 2. In essence, the trim air valves fine-tune the temperature for individual zones by mixing precise amounts of hot air with the conditioned air supplied from the mixing unit. This allows the system to achieve and maintain the selected temperature for each of the independently controlled zones."
+  },
+  {
+    "question": "The temperature of each aircraft zone is optimized by means of:",
+    "options": [
+      "A HOT AIR valve.",
+      "A ZONE control valve.",
+      "A PACK FLOW VALVE.",
+      "A TRIM AIR valve."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Position of TRIM Air valves and hot air pressure regulating valves are indicated in",
+    "options": [
+      "COND page.",
+      "Bleed page",
+      "COND & BLEED page",
+      "COND and CAB PRESS page"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "FWD cabin temp selector is set to 12 O clock position",
+    "options": [
+      "FWD cabin temperature is controlled to 18 deg. c",
+      "FWD cabin is controlled to a temp of 24 deg c.",
+      "AFT cabin is controlled to a temp of 24 deg c",
+      "FWD and AFT cabin temp is controlled to 18 deg. c"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How are the Ram Air Inlet and outlets controlled.",
+    "options": [
+      "Open during takeoff and landing.",
+      "Closed during takeoff, closed during landing till the speed reaches 70 kts",
+      "Closed during takeoff and open when the speed reaches below 70 kts during landing",
+      "Closed during landing when the speed is less than 70 kts."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Even when LO is selected on the PACK FLOW selector, the pack flow is automatically selected NORM in case of:",
+    "options": [
+      "Single pack operation.",
+      "APU supplying bleed air.",
+      "Cooling demand not being met.",
+      "All the above."
+    ],
+    "correctAnswer": 2,
+    "explanation": "If LO is selected, the pack flow can automatically provide up to NORM flow (100%) when the cooling demand cannot be satisfied. This means the system will increase the flow from the initial LO setting (80%) towards NORM (100%) to meet the temperature requirements."
+  },
+  {
+    "question": "When LO is selected on the PACK FLOW selector, the pack flow is automatically selected HI in case of:",
+    "options": [
+      "APU supplying bleed air.",
+      "abnormally hot and humid conditions",
+      "Number of passengers in the cabin higher than 115.",
+      "Both, (A) and (B)."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "When only one pack is operating and Pack selector is at LO. What is the flow.",
+    "options": [
+      "80% of normal flow",
+      "150% of normal flow.",
+      "Normal flow",
+      "120% of normal flow."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Select correct statements: Pack Flow Control Valve closes automatically in case of 1. Pack Compressor outlet-overheat. 2. Engine start sequence 3. Fire pushbutton, of the engine on the related side, is pressed, 4. Ditching is selected.",
+    "options": [
+      "2,3,4",
+      "1,2,3,4",
+      "1,2,3",
+      "2,3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pack Compressor outlet-overheat: The Pack Flow Control Valve closes automatically in cases of compressor outlet overheat. Although some sources mention “pack overheat (on ground only)”, others specifically include “compressor outlet overheat” as a trigger for a caution and implicitly for closure. Engine start sequence: The valve automatically closes during the engine start sequence. This includes specific conditions such as when the crossbleed valve is closed and the MODE selector is set to IGN (or CRK), or when the MASTER switch is ON, the start valve is open, and N2 is below 50%. If the crossbleed valve is open during engine start, both pack flow control valves will close. Fire pushbutton, of the engine on the related side, is pressed: The Pack Flow Control Valve closes automatically if the FIRE pushbutton of the engine on the related side is pressed. Ditching is selected: When the DITCHING pushbutton is selected, the pack flow control valves close"
+  },
+  {
+    "question": "When ACSC No.1 fails, 1. Pack flow control valve no. 1 will close. 2. Pack flow control valve no.2 will go to higher flow irrespective of the PACK FLOW Selector position. 3. Hot Air Pressure regulating Valve will close. 4. Cockpit + Cabin temp at fixed temp only because of Hot Air Press Regulating Valve closure and all trim air valves closure.",
+    "options": [
+      "3,4",
+      "3",
+      "1,2,3,4",
+      "1,3,4"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What happens when ACSC No.2 fails? 1. Pack flow control valve no. 2 will close and Pack flow control valve no.1 will go to higher flow irrespective of the Pack Flow Selector position. 2. Cabin Trim Air Valves {FWD + AFT} close. 3. Cockpit temp control normal but Cabin temp at fixed temp only.",
+    "options": [
+      "1",
+      "1,2",
+      "1,2,3",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is the effect of selecting the Hot Air p/b switch to OFF.",
+    "options": [
+      "The closure of hot air pressure regulating valve only.",
+      "The opening of trim air valves.",
+      "The closure of hot air pressure regulating valve and all the trim air valve.",
+      "Closing of hot air pressure valve and opening of trim air valves."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "Hot air “FAULT” light illuminates on the air conditioning panel.",
+    "options": [
+      "The hot air press reg. valve closes and the trim air valves close.",
+      "The hot air press reg. valve opens and the trim air valves close.",
+      "The hot air press reg. valve closes and the trim air valves open."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "After taxi out, HOT AIR p/b amber FAULT light comes ON along with associated ECAM caution. What could be the reasons?",
+    "options": [
+      "Duct over-pressure is detected.",
+      "Duct overheat is detected.",
+      "Any of the cabin trim air valve has failed, stuck in open",
+      "All of the above conditions."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What happens when the hot air pressure regulating valve has failed in open position.",
+    "options": [
+      "No effect on temp regulation",
+      "Pack 1 controls the cockpit, pack 2 controls the cabin temp to the mean value of the selected temp.",
+      "Trim air valves go to closed position to optimize the temperatures as hot air keeps supplied by Hot Air Valve.",
+      "No effect on the cockpit. Cabin temp are controlled to a fixed temp of 15 Deg.c"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Failed open : No effect. Failed closed : Optimized regulation is lost. Trim air valves are driven to the fully closed position. Pack 1 controls the cockpit temperature to the selected value and pack 2 controls the cabin temperature (FWD and AFT) to the mean value of the selected temperatures."
+  },
+  {
+    "question": "What are the indications if a Pack p/b switch are selected OFF before take-off?",
+    "options": [
+      "Pack FAULT LT without any MC or SC",
+      "Pack “OFF” light only."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "After switching packs on after T/O, FAULT light comes on amber in the PACK 1 p/b with associated ECAM. what do you understand by this?",
+    "options": [
+      "The pack flow control valve position disagrees with selected position, or",
+      "There could be Compressor outlet overheat, or",
+      "There could be Pack outlet overheat",
+      "All are correct"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "When should RAM air p/b switch be used ? What happens then ?",
+    "options": [
+      "Only when differential pressure is less than 1 psi. it opens the EMER RAM AIR inlet and outflow valve open to 50 % position if CAB is AUTO.",
+      "Whenever more ventilation is needed",
+      "Only when differential pressure is less than 1 psi, it opens the EMER RAM AIR inlet and closes the packs",
+      "When differential pressure is less than 1 psi, it opens the EMER RAM AIR inlet and closes the outflow valve."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "When do we use RAM AIR p/b",
+    "options": [
+      "AT any time.",
+      "Only when differential pressure is less than 1 psi",
+      "Only when differential pressure is more than 1 psi",
+      "Only after the outflow valve is fully open"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Select the correct statements: 1. The guarded p/b of Emergency RAM AIR is to be used when Cabin differential Pressure is less than 1 psi. 2. Emergency RAM AIR is used in case of Smoke Removal Procedure to remove smoke. 3. Emergency RAM AIR is used in case of both Packs 1+ 2 Fail.",
+    "options": [
+      "1,2,3",
+      "1,2",
+      "1",
+      "2,3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "Pack valve automatically closes due to",
+    "options": [
+      "Pack outlet pressure being very high",
+      "Pack overheat or corresponding fire p/b is pressed or ditching p/b is pressured or during any engine start.",
+      "Leakage detected in the air cycle machine.",
+      "Pack flow selector at LO position."
+    ],
+    "correctAnswer": 1,
+    "explanation": "This valve is pneumatically-operated and electrically-controlled. It regulates the air flow in accordance with signals received from the pack controllers or the ACSC . In the absence of air pressure, a spring keeps the valve closed. The valve closes automatically in case of pack overheat (on ground only), engine start, or operation of the fire or ditching pushbutton. The valve is controlled from the AIR COND panel."
+  },
+  {
+    "question": "What happens when ditching push button is selected to ON?",
+    "options": [
+      "Safety valves are driven to full OPEN.",
+      "Pack flow control valves, out flow valve, skin air inlet an extract valves and Emer. Ram Air inlet valve close.",
+      "Only pack flow control valve and Emer. Ram Air Inlet valve close.",
+      "As in (B) but outflow valve will close only if press mode selector is in AUTO."
+    ],
+    "correctAnswer": 3,
+    "explanation": "To prepare for ditching, the flight crew must press the DITCHING pb on the CABIN PRESS control panel to close the outflow valve, the emergency ram air inlet, the avionics ventilation inlet and extract valves, the pack flow control valves, and the FWD cargo outlet isolation valve"
+  },
+  {
+    "question": "By increasing cabin altitude in flight, what happens to Cabin Diff Pressure?",
+    "options": [
+      "It will increase.",
+      "It will decrease.",
+      "There will be no change."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "When will Auto transfer from one CPC to another controller occurs.",
+    "options": [
+      "At each landing initiated 70 sec after each landing.",
+      "In case of failure of the operating system.",
+      "If FMGS fails.",
+      "(A) and (B) are correct"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "In automatic pressure control mode what will be the cabin altitude.",
+    "options": [
+      "Always 8000 feet.",
+      "It is highest of the value of cabin altitude reached at aircraft level off and landing elevation",
+      "Always the landing elevation.",
+      "It is the cabin altitude reached at the time of aircraft level off."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What will be differential pressure for different flights.",
+    "options": [
+      "Always 8.00 psi",
+      "Always 8.60 psi",
+      "Differential pressure valve depends upon flight altitude.",
+      "As in (C) and the normal maximum value of 8.60 psi is reached when flight altitude is 39000 ft."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What happens in Auto Pr. Control in the Abort mode.",
+    "options": [
+      "Take off is Aborted pre-pressurization is aborted.",
+      "If a/c returns to take off field before reaching a certain altitude, cabin altitude is controlled to T/O field.",
+      "If a/c returns to take off field before reaching a certain altitude, cabin altitude is maintained constant.",
+      "At touch down cabin altitude is same as a/c altitude."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Which are the correct statement regarding CAB PRESS mode selector p/b?",
+    "options": [
+      "With both the CPC failure, mode selector FAULT light comes on.",
+      "With single CPC failure, mode selector FAULT light comes on",
+      "As in (A) and when the mode selector p/b is selected to MAN, MAN illuminates white and FAULT extinguishes.",
+      "As in (A) and when the mode selector p/b is selected to MAN, MAN illuminates white and FAULT remains illuminated."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "In cruise, you find cabin V/S is fluctuating up and down and is uncomforting to you as well as to pax. You want to switchover the Cabin Pressure Controller and it is done by:",
+    "options": [
+      "Selecting the Cabin Pressure MODE SEL p/b to MAN and then back to AUTO.",
+      "As in (A) but the MODE SEL should be left in MAN for at least 10 sec",
+      "The switch over may be carried out not more than twice in a flight.",
+      "Both (A) and (C) are correct"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The MODE SEL p/b in MAN mode, allows you to use the MAN V/S CTL sw in order to …..",
+    "options": [
+      "Manually alter the air inlet valve setting.",
+      "Manually adjust the pack flow valve.",
+      "Manually adjust the outflow valve.",
+      "Manually alter the pack outflow valve setting."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "If landing field elevation from FMGC is not available, you have to set manually by pulling the LDG ELEV Sel. The cabin altitude is …..",
+    "options": [
+      "Only controllable manually through the MAN V/S CTL sw.",
+      "Still controlled automatically through the out flow valve.",
+      "Still controlled normally through the safety valve",
+      "Only controllable manually through the LDG ELEV selector."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What happens when landing elevation selector is not in auto position.",
+    "options": [
+      "With FMGS available, landing elevation data is coming from FGMS for pressurization in controller, selected landing elevation is ignored.",
+      "With the FMGS not available landing elevation selected is taken as reference.",
+      "Landing elevation selected only is taken as reference even if FMGS is available.",
+      "Both (A) and (B) are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "When OFV gets opened during a flight, what immediate action is required.",
+    "options": [
+      "Ditching p/b _ ON",
+      "Mode selector to MAN & V/S CTL Sw_Down",
+      "Emer RAS p/b _OFF",
+      "Blower and Extract p/bs _ OFF"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How is the MAN V/S CTL switch toggle used.",
+    "options": [
+      "The switch actuation is very fast.",
+      "As in (A) and switch should not be maintained in up or down position.",
+      "As in (B) and if it is maintained in up outflow valve will open in 10 seconds.",
+      "Due to slow outflow valve position, toggle switch must be maintained in up and down position until target V/S is reached."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "CABIN PRESS mode selector is in MAN. If ditching p/b is selected ON, the",
+    "options": [
+      "Outflow valve will not close automatically.",
+      "OFV will close automatically",
+      "Ram Air inlet valve open",
+      "Engine bleed valve opens"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "In manual pressure control mode",
+    "options": [
+      "ECAM indications are not available",
+      "Outflow valve position signal is transmitted via manual backup section of controller No.1",
+      "Outflow valve position signal is transmitted via back up section of controller No. 2",
+      "Outflow valve is set to full open always."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Two safety valves are provided such that",
+    "options": [
+      "Each safety valve avoids excessive positive and negative differential pressure.",
+      "One safety valve avoids excessive positive differential pressure and another safety valve avoids excessive negative differential pressure.",
+      "Both safety valves avoid excessive positive differential pressure only.",
+      "Both safety valves avoid excessive negative differential pressure only."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "What happens when you press Extract P/B to OVRD when in heavy rain on ground? 1. Extract Fan stops. 2. Extract Fan keeps running. 3. Air-conditioning air is added for ventilation. 4. Avionics ventilation sys goes into Closed Config.",
+    "options": [
+      "1,3,4",
+      "2,3,4",
+      "2,4",
+      "1,4"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Mark the correct statement:",
+    "options": [
+      "When you set Blower pb / sw to Override, Blower stops, air-conditioning air is added for ventilation and avionics ventilation sys goes into Closed Config.",
+      "When you set Extract pb / sw to Override, extract fan keeps running, airconditioning air is added for ventilation and avionics ventilation sys goes into Closed Config.",
+      "If both Blower and Extract pb / sw are set to override, Blower fan stops, Extract keeps running, air conditioning air is added for avionics ventilation and configuration is akin to Intermediate Config.{Smoke drill Action}",
+      "All are correct."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "For the aircraft to be in normal operation,intermediate configuration,what conditions must be satisfied?",
+    "options": [
+      "Aircraft must be on ground with the thrust levers not at T/O and the skin temp. above a given threshold.",
+      "Aircraft must be in the air with the thrust levers at T/O and skin temp.",
+      "Aircraft must be in the air or on the ground, with the thrust levers at T/O and skin temp. above a given threshold.",
+      "The skin temp. must be below a given threshold."
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "For the aircraft to be in the normal operation, open circuit configuration ,what conditions must be satisfied ?",
+    "options": [
+      "The aircraft must be on ground ,with the thrust lever not at T/O and skin temp. above a given threshold.",
+      "The aircraft must be in the air ,with the thrust lever not at T/O and skin temp. below the given thresh hold.",
+      "The aircraft must be on ground ,with the thrust lever at T/O and skin temp. above a given threshold."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "If both blower and extract p/b switches are set to OVRD, during smoke drill, the avionic equipment air is ……",
+    "options": [
+      "Taken from atmosphere and thrown overboard.",
+      "Taken from atmosphere and circulated through skin heat exchanger.",
+      "Taken from air conditioning bay and thrown overboard .",
+      "Taken from air conditioning bay and circulated through skin heat exchanger."
+    ],
+    "correctAnswer": 2,
+    "explanation": "When both the BLOWER and the EXTRACT pushbuttons are set to the OVRD position during a smoke drill, the following occurs for the avionics equipment air: The air conditioning system supplies cooling air, which is then exhausted overboard. The avionics ventilation system transitions into a closed circuit configuration. The blower fan stops. The extract fan continues to run."
+  },
+  {
+    "question": "What happens during smoke drill when both the blower and the extract p/b switches are set to override.",
+    "options": [
+      "Only the extract fan will stop",
+      "The Blower fan stops and the extract fan remains energized.",
+      "Both the blower and the extract fan will stop working",
+      "Both the blower and the extract fan remain energized."
+    ],
+    "correctAnswer": 1,
+    "explanation": "When you press the Extract P/B to OVRD (Override) on the overhead panel, regardless of external conditions like heavy rain on the ground, the following actions occur: Extract Fan keeps running. Source explicitly states: “When the EXTRACT pushbutton switch is set at OVRD, the extract fan is controlled directly from the pushbutton. Both fans continue to run.” Air-conditioning air is added for ventilation. When either the BLOWER or EXTRACT pushbutton switch is in the OVRD position, “Air from the air conditioning system is added to ventilation air”. The Avionics ventilation system goes into Closed Config. When either the BLOWER or EXTRACT pushbutton switch is in the OVRD position, “The system goes to closed circuit configuration”. Therefore, options 2, 3, and 4 describe what happens. Option 1, “Extract Fan stops,” is incorrect. The condition of “heavy rain on ground” does not change these override behaviors, as the OVRD selection forces the system into a specific configuration, bypassing automatic controls that might otherwise be influenced by external conditions."
+  },
+  {
+    "question": "On ground with engines stopped, when will an external horn be trigged.",
+    "options": [
+      "If avionic ventilation blower pressure is low.",
+      "If DUCT OVHT",
+      "Extract fan extract pressure is low.",
+      "In all the above cases."
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "In case of heavy rain which p/bs are to be pressed for landing.",
+    "options": [
+      "Extract to OVRD",
+      "Blower to OVRD",
+      "Blower and Extract to OVRD",
+      "Ditching p/b."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Based on the provided sources and our conversation history, the primary pushbutton directly related to operating in heavy rain for landing is the Rain Repellent (RAIN RPLNT) pushbutton (pb). While the sources do not provide a detailed procedure for landing in heavy rain, the presence of the RAIN RPLNT pb and the mention of the Rain Repellent System indicate that this system is intended for managing rain on the windshield. The Rain Repellent System can be activated (or reactivated, as mentioned in the context of “fluid compatible with ozone protection rules”) via its dedicated pushbutton. Other systems mentioned in the context of rain or weather include: Wiper Intermittent Position: Wipers are a general function for clearing rain, and “Wiper Intermittent Position” is listed as being related to “RAIN”. However, the specific action of pressing a “P/B” for wipers is not explicitly detailed; wipers are typically controlled by a switch with various positions. Weather Radar System (WXR): The aircraft is equipped with a weather radar system capable of Predictive Windshear (PWS) function, which aids in detecting adverse weather. However, this is for detection rather than a control (pushbutton) to be pressed for landing in rain. Pack Flow Selector: While the “PACK FLOW selector” can be used to choose pack valve flow according to “ambient conditions (smoke removal, hot or wet conditions)”, this relates to air conditioning flow and not a direct control for managing rain during landing."
+  },
+  {
+    "question": "There is abnormal residual pressure in the cabin on touch-down when pressurization had been controlled manually in flight. The aircraft will be automatically de-pressurized by opening the outflow valve, as soon as …",
+    "options": [
+      "All ADIRS indicate an airspeed below 100 kts, or when all engines are shutdown",
+      "Parking brakes are applied, and any-one aircraft door is opened.",
+      "As in (B), and CABIN PRESSURE red light on the cabin doors, flashes.",
+      "None of the above is correct."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "You have taxied out when OAT is + 14°C. What is the configuration of avionics ventilation?",
+    "options": [
+      "Open configuration",
+      "Closed configuration",
+      "Intermediate configuration."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "You have taxied out when OAT is + 40°C. What is the configuration of avionics ventilation? {Reference GND Threshold =+12 rising / +9 falling, FLT Threshold = +35 rising / +32 falling}",
+    "options": [
+      "Closed configuration",
+      "Open configuration",
+      "Intermediate configuration."
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "You have set the Thrust Levers to FLX/MCT for take-off and OAT is +40°C. What is the configuration of avionics ventilation?",
+    "options": [
+      "Open configuration",
+      "Closed configuration",
+      "Intermediate configuration."
+    ],
+    "correctAnswer": 2,
+    "explanation": "When the Thrust Levers are set to FLX/MCT for takeoff and the Outside Air Temperature (OAT) is +40°C, the avionics ventilation system will be in the closed-circuit configuration. Here’s why: The avionics ventilation system operates automatically. When the BLOWER and EXTRACT pushbutton switches are in the normal “AUTO” position, the system’s configuration depends on the operational phase. During ground operations after the application of takeoff power, the ventilation system automatically transitions to a closed-circuit configuration. This condition applies when the thrust levers are set to FLX/MCT for takeoff. While an OAT of +40°C is high and might typically lead to an open-circuit configuration during general ground operations (where the skin temperature is above +12°C), the specific action of applying takeoff power (setting thrust levers to FLX/MCT) overrides other ground-based temperature thresholds, forcing the system into the closed-circuit configuration for the takeoff phase."
+  },
+  {
+    "question": "Mark the correct statement:",
+    "options": [
+      "LDG ELEV AUTO appears in green when LDG ELEV selector is in AUTO.",
+      "LDG ELEV MAN appears in green if LDG ELEV Selector is not in AUTO.",
+      "If ECAM has CAB PR LDG ELEV FAULT, landing field elevation from FMGC is not available. Landing elevation must be manually selected with LDG ELEV selector. For this S/D CRUISE or CAB PRESS pages can be referred.",
+      "All the above are correct"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "What is the meaning of CAB PR LDG ELEV FAULT?",
+    "options": [
+      "Wrong selection of LDG ELEV is made.",
+      "LDG ELEV selector is moved out of auto without requirement",
+      "LDG ELEV data from FMGC is not available.",
+      "All the above are correct."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The “CAB PR LDG ELEV FAULT” message is an ECAM alert that indicates a fault in the aircraft’s systems related to cabin pressure and landing elevation management. This message specifically appears in situations involving failures of the Flight Management and Guidance Computers (FMGCs): It may be triggered by the Flight Warning System (FWS) in the event of a single latch FMGC failure. A “single latch” occurs when one FMGC fails and latches, leading to single mode operation. It is displayed when both FMGCs become inoperative (dual latch), indicating a loss of FM and FG capability, along with other critical system failures. The message is also presented after a dual FMGS reset with loss of data and autorecovery, particularly after four successive dual resets within 3 minutes, which results in the erasure of all pilot-entered data."
+  },
+  {
+    "question": "With Pack 1 and 2 Fault, the recommended max FL is",
+    "options": [
+      "100 / MEA {whichever is higher}",
+      "140 / MEA {whichever is higher}",
+      "150 / MEA {whichever is higher}",
+      "250 / MEA {whichever is higher}"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Based on the provided sources, there is no explicit mention of a recommended maximum flight level (FL) specifically for a “Pack 1 and 2 Fault”. However, the sources do provide information about: Recommended Maximum Altitude (REC MAX): This altitude is displayed on the PROG page and is the lowest maximum altitude the aircraft can reach while maintaining a 0.3 g buffet margin, flying level at MAX CRZ rating, or maintaining a V/S of 300 ft/min at MAX CLB thrust, among other criteria. It is limited to FL 398. Anti-ice is not considered for this computation. Engine-Out Condition: If one engine is out, the REC MAX altitude displayed on the PROG page is the recommended maximum engine-out altitude, which is computed based on the long-range cruise speed and assumes anti-ice is off. While the FCOM excerpts detail how engine-out conditions affect the recommended maximum altitude, and they mention pack fault indications, they do not specify a corresponding maximum flight level for a complete loss of both air conditioning packs."
+  }
+]

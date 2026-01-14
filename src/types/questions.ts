@@ -4,23 +4,47 @@ export interface Question {
   options: string[];
   correctAnswer: number;
   explanation: string;
-  category: string;
-  subcategory?: string;
+  topicId: string;
   difficulty: "easy" | "medium" | "hard";
-  source: QuestionSource;
-  aircraft?: string;
 }
 
 export type QuestionSource = "ATPL" | "Indigo" | "Oxford" | "Keith Williams" | "Previous Papers";
 
-export interface Category {
+export type SectionType = "dgca_questions" | "books" | "aircrafts" | "airlines";
+
+export interface Section {
+  type: SectionType;
+  name: string;
+  icon?: string;
+}
+
+export interface Subtype {
   id: string;
+  sectionType: SectionType;
   name: string;
   slug: string;
-  description: string;
-  icon: string;
-  questionCount: number;
-  subcategories?: string[];
+  description?: string;
+  questionCount?: number;
+}
+
+export interface Category {
+  id: string;
+  sectionType?: SectionType; // Only set if category is directly under section
+  subtypeId?: string; // Only set if category is under a subtype
+  name: string;
+  slug: string;
+  description?: string;
+  icon?: string;
+  questionCount?: number;
+}
+
+export interface Topic {
+  id: string;
+  categoryId: string | null; // Nullable - topics can exist without categories
+  name: string;
+  slug: string;
+  description?: string;
+  questionCount?: number;
 }
 
 export interface TestConfig {
@@ -33,7 +57,8 @@ export interface TestConfig {
 export interface TestResult {
   id: string;
   date: Date;
-  categoryId: string;
+  topicId?: string;
+  categoryId?: string;
   score: number;
   totalQuestions: number;
   timeTaken: number; // in seconds
@@ -61,6 +86,14 @@ export interface UserProgress {
 
 export interface CategoryProgress {
   categoryId: string;
+  questionsAttempted: number;
+  correctAnswers: number;
+  averageScore: number;
+  lastAttempted: Date;
+}
+
+export interface TopicProgress {
+  topicId: string;
   questionsAttempted: number;
   correctAnswers: number;
   averageScore: number;

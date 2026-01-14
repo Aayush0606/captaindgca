@@ -127,23 +127,9 @@ export function QuestionCard({ question, index, showAnswer = false }: QuestionCa
 
             {isExpanded && (
               <div className="mt-3 p-4 rounded-lg bg-muted/50 text-sm animate-fade-in">
-                <p className="text-muted-foreground">{question.explanation}</p>
-                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                  <Badge variant="secondary">{question.source}</Badge>
-                  <span>•</span>
-                  <span className="capitalize">{question.category.replace("-", " ")}</span>
-                </div>
+                <p className="text-muted-foreground">{question.explanation || "No explanation available."}</p>
               </div>
             )}
-
-            <Button
-              variant="outline"
-              size="sm"
-              className="mt-3"
-              onClick={resetQuestion}
-            >
-              Try Again
-            </Button>
           </div>
         )}
       </CardContent>

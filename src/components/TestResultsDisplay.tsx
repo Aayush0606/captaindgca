@@ -12,9 +12,10 @@ interface TestResultsDisplayProps {
   results: TestResults;
   questions: Question[];
   onRetry: () => void;
+  isSaving?: boolean;
 }
 
-export function TestResultsDisplay({ results, questions, onRetry }: TestResultsDisplayProps) {
+export function TestResultsDisplay({ results, questions, onRetry, isSaving = false }: TestResultsDisplayProps) {
   const percentage = Math.round((results.score / results.totalQuestions) * 100);
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -103,12 +104,15 @@ export function TestResultsDisplay({ results, questions, onRetry }: TestResultsD
           </div>
 
           <div className="flex justify-center gap-4 pt-4">
-            <Button onClick={onRetry} variant="outline" className="gap-2">
+            {isSaving && (
+              <p className="text-sm text-muted-foreground">Saving your results...</p>
+            )}
+            <Button onClick={onRetry} variant="outline" className="gap-2" disabled={isSaving}>
               <RotateCcw className="h-4 w-4" />
               Retry Test
             </Button>
             <Link to="/">
-              <Button className="gap-2">
+              <Button className="gap-2" disabled={isSaving}>
                 <Home className="h-4 w-4" />
                 Back to Home
               </Button>

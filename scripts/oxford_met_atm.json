@@ -1,0 +1,409 @@
+[
+  {
+    "question": "How does temperature vary with increasing altitude in the ICAO standard atmosphere below the tropopause?",
+    "options": [
+      "Increases",
+      "At first it increases and higher up it decreases",
+      "Remains constant",
+      "Decreases"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "Which is true of the temperature at the tropopause?",
+    "options": [
+      "It is higher in polar regions than in equatorial regions",
+      "It is higher in equatorial regions than in Polar Regions",
+      "It is highest in middle latitudes",
+      "There is no significant difference with change of latitude"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since temperature decreases with height it goes to follow that the temperature at the tropopause is controlled by its height. The higher it is, the colder the temperature at the tropopause. The lower it is, the warmer the temperature at the tropopause. The temperature at the tropopause can be as high as -40°C over the poles and as low as -80°C over the equator. However, on average the tropopause is at about 11 km where its temperature is -56.5°C."
+  },
+  {
+    "question": "What is the boundary layer between troposphere and stratosphere called?",
+    "options": [
+      "Tropopause",
+      "Ionosphere",
+      "Stratosphere",
+      "Atmosphere"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How would you characterise an air temperature of -15°C at the 700 hPa level over Western Europe?",
+    "options": [
+      "Low",
+      "High",
+      "Within +/-5°C of ISA",
+      "20°C below standard"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As per the table above 700 hpa gives 10000 feet pressure altitude, at 10000 feet temperature as per ISA should be (using -2°C lapse rate and 15° at msl ) (10x-2°) 15=-5°c. But it is -15° so it is too low"
+  },
+  {
+    "question": "The temperature at FL 110 is -5°C. What will the temperature be at FL 50 if the ICAO standard lapse rate is applied?",
+    "options": [
+      "+3°C",
+      "0°C",
+      "-3°C",
+      "+7°C"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Temperature at Fl 110 is-5°C We have to calculate the isa deviation lapse rate = -2°C per 1000 feet And temp at msl is 15°C hence temp under isa should be= -22°C plus 15°= -7°C isa deviation is = 2°C now at flight level 5000 as per isa temp should be 5°C applying the deviation we get 7°C"
+  },
+  {
+    "question": "How does the height of the tropopause normally vary with latitude in the northern hemisphere?",
+    "options": [
+      "It remains constant throughout the year",
+      "It decreases from south to north",
+      "It remains constant from north to south",
+      "It increases from south to north"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "The temperature at FL 80 is +6°C. What will the temperature be at FL 130 if the ICAO standard lapse rate is applied?",
+    "options": [
+      "+2°C",
+      "-4°C",
+      "-6°C",
+      "0°C"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Temperature at Fl 80 is 6°C We have to calculate the isa deviation lapse rate = -2°C per 1000 feet And temp at msl is 15°C hence temp under isa should be= —16°C plus 15°= -1°C isa deviation is = 7°C now at flight level 13000 as per isa temp should be -11°C applying the deviation we get -4°C"
+  },
+  {
+    "question": "The lowest assumed temperature in the ICAO Standard Atmosphere is :",
+    "options": [
+      "-273°C",
+      "-44.7°C",
+      "-100°C",
+      "-56.5°C"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The ICAO ISA is defined as follows:- a MSL temperature of 15°C a lapse rate of 0.65°C/100m (1.98° C /1000 ft) up to 11 km (36,090 ft) a constant temperature of –56.5°C from 11 km (36,090ft) to 20 km (65,617 ft) after which the temp increases with height ( inversion). hence lowest is -56.5°"
+  },
+  {
+    "question": "The troposphere is the:",
+    "options": [
+      "part of the atmosphere below the tropopause",
+      "part of the atmosphere above the stratosphere",
+      "boundary between the mesosphere and thermosphere",
+      "boundary between the stratosphere and the mesosphere"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+  },
+  {
+    "question": "How would you characterise an air temperature of -55°C at the 200 hPa level over Western Europe?",
+    "options": [
+      "Within +/-5°C of ISA",
+      "High",
+      "Low",
+      "Very high"
+    ],
+    "correctAnswer": 0,
+    "explanation": "as per the table 200 hpa is 38000 feet at 38000 feet temp as per isa should be ( using 2° lapse rate and 15° msl) (38x-2)plus 15=-61°c Within +/-5°C of ISA"
+  },
+  {
+    "question": "The height and the temperature of the tropopause are respectively in the order of",
+    "options": [
+      "8 km and -40°C over the equator",
+      "8 km and - 75°C over the poles",
+      "16 km and -40°C over the poles",
+      "16 km and -75°C over the equator"
+    ],
+    "correctAnswer": 3,
+    "explanation": "over the poles, the tropopause can be between 8 -10 km and over the equator 16 – 18 km The lower it is, the warmer the temperature at the tropopause. The temperature at the tropopause can be as high as -40°C over the poles and as low as -80°C over the equator."
+  },
+  {
+    "question": "What of the following is the most important constituent in the atmosphere from a weather stand-point?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen",
+      "Water vapour"
+    ],
+    "correctAnswer": 3,
+    "explanation": "THE CONSTITUENTS OF THE ATMOSPHERE Nitrogen 78 % Argon 0.95% Oxygen 21 % Carbon Dioxide 0.05% Plus traces of: Neon Nitrous Oxide Helium Nitrogen Dioxide Krypton Carbon Monoxide Xenon Sulphur Dioxide Hydrogen Ammonia Methane Iodine and Ozone Water Vapour Of all the trace gases, water vapour is by the far the most significant. Without it there would be no weather."
+  },
+  {
+    "question": "What is the vertical temperature lapse rate, up to 11 km, in the ICAO standard atmosphere?",
+    "options": [
+      "6.5°C per 1000 m",
+      "4.5°C per 1000 m",
+      "3°C per 1000 m",
+      "2°C per 1000 m"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ICAO ISA is defined as follows:- a MSL temperature of 15°C¾ ¾ a MSL pressure of 1013.25 hPa¾ ¾ a MSL density of 1225 g/m¾ ¾ 3 a lapse rate of 0.65°C/100m (1.98° C /1000 ft) up to 11 km (36,090 ft) a constant temperature of -56.5°C from 11 km (36,090ft) to 20 km (65,617 ft)¾ ¾ an increase of temperature 0.1°C/100m (0.3°C /1000 ft), from 20 km (65,617ft) to 32 km ¾ ¾ (104,987 ft)"
+  },
+  {
+    "question": "An outside air temperature of -35°C is measured while cruising at FL 200. What is the temperature deviation from the ISA at this level?",
+    "options": [
+      "10°C warmer than ISA",
+      "5°C warmer than ISA",
+      "5°C colder than ISA",
+      "10°C colder than ISA"
+    ],
+    "correctAnswer": 3,
+    "explanation": "As per isa fl 200 should have (20x-2*) plus 15= -25 as temperature (-2 being lapse rate)* but actual is -35 which is 10° colder"
+  },
+  {
+    "question": "How would you characterise an air temperature of -30°C at the 300 hPa level over Western Europe?",
+    "options": [
+      "Within +/-5°C of ISA",
+      "Low",
+      "Very low",
+      "High"
+    ],
+    "correctAnswer": 3,
+    "explanation": "as per table pressure altitude is 30000 feet As per isa 30000 should have (30x-2*) plus 15= —45°c as temperature (-2 being lapse rate)* but temp is -30° hence it is HIGH"
+  },
+  {
+    "question": "The rate of decrease of temperature with height per 100 m in the International Standard Atmosphere is:",
+    "options": [
+      "0.65°C",
+      "1°C",
+      "0.5°C",
+      "variable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ICAO ISA is defined as follows:- a MSL temperature of 15°C a lapse rate of 0.65°C/100m (1.98° C /1000 ft) up to 11 km (36,090 ft)"
+  },
+  {
+    "question": "What is the approximate composition of the dry air by volume in the troposphere?",
+    "options": [
+      "50 % oxygen, 40 % nitrogen, and the rest other gasses",
+      "21 % oxygen, 78 % nitrogen, and the rest other gasses",
+      "10 % oxygen, 89 % nitrogen, and the rest other gasses",
+      "88 % oxygen, 9 % nitrogen, and the rest other gasses"
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "If you are flying at FL 300 in an air mass that is 15°C warmer than a standard atmosphere, what is the outside temperature likely to be?",
+    "options": [
+      "-15°C",
+      "-30°C",
+      "-45°C",
+      "-60°C"
+    ],
+    "correctAnswer": 1,
+    "explanation": "as per table pressure altitude is 30000 feet As per isa 30000 should have (30x-2*) plus 15= —45°c as temperature (-2 being lapse rate)* but temp is 15 ° warmer hence it -45 15 -30° Celsius"
+  },
+  {
+    "question": "A temperature of +15°C is recorded at an altitude of 500 metres above sea level. If the vertical temperature gradient is that of a standard atmosphere, what will the temperature be at the summit of a mountain, 2500 metres above sea level?",
+    "options": [
+      "+4°C",
+      "0°C",
+      "-2°C",
+      "+2°C"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lapse rate in isa is 0.65°c per 100 m 15°C is temperature at msl at 500 metres temp as per isa=[ (5x -0.65°) plus 15°]=11.75°C but actual is 15°c isa deviation is = 15°-11.75°=3.25° now at 2500 metres temperature as per isa is = [(25x -0.65°)plus 15°]=-1.25°c adding deviation -1.25° plus 3.25°= 2°"
+  },
+  {
+    "question": "The temperature at FL 140 is -12°C. What will the temperature be at FL 110 if the ICAO standard lapse rate is applied?",
+    "options": [
+      "-15°C.",
+      "-6°C.",
+      "-18°C.",
+      "-9°C."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The temperature as per isa will reduce by 2° if we climb every 1000 feet, so if we descend 3000 feet from FL140 to FL 110 then temp will increase by 6 ° hence temperature will be -12° plus 6°= -6°"
+  },
+  {
+    "question": "If you are flying at FL 120 and the outside temperature is -2°C, at what altitude will the “freezing level” be?",
+    "options": [
+      "FL 150",
+      "FL 90",
+      "FL 110",
+      "FL 130"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freezing point is when temperature is 0° if at FL 120 temperature is -2° then as per lapse rate if we go 1000 feet below temp will increase by 2° and at FL110 temp will be 0°"
+  },
+  {
+    "question": "The troposphere:",
+    "options": [
+      "reaches the same height at all latitudes",
+      "has a greater vertical extent above the equator than above the poles",
+      "contains all oxygen of the stratosphere",
+      "is the separation layer between the stratosphere and atmosphere"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Tropopause is at the top of the troposphere. It marks the boundary between the troposphere and the next atmospheric layer, the stratosphere. The height of the tropopause is controlled by the temperature of the air near the surface. The warmer the air, the higher the tropopause. The colder the air, the lower the tropopause. Generally over the poles, the tropopause can be between 8 -10 km and over the equator 16 – 18 km."
+  },
+  {
+    "question": "The thickness of the troposphere varies with:",
+    "options": [
+      "rotation of the earth",
+      "the wind",
+      "latitude",
+      "longitude"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The warmer the air, the higher the tropopause. The colder the air, the lower the tropopause. Generally over the poles, the tropopause can be between 8 -10 km and over the equator 16 – 18 km. Surface temperature variations due to latitude, season, land and sea, will all cause varying heights of the tropopause."
+  },
+  {
+    "question": "What, approximately, is the average height of the tropopause over the equator?",
+    "options": [
+      "16 km",
+      "8 km",
+      "11 km",
+      "40 km"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The warmer the air, the higher the tropopause. The colder the air, the lower the tropopause. Generally over the poles, the tropopause can be between 8 -10 km and over the equator 16 – 18 km."
+  },
+  {
+    "question": "Going from the equator to the North Pole, the altitude of the tropopause",
+    "options": [
+      "decreases and its temperature increases",
+      "increases and its temperature increases",
+      "increases and its temperature decreases",
+      "decreases and its temperature decreases"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The warmer the air, the higher the tropopause. The colder the air, the lower the tropopause. Generally over the poles, the tropopause can be between 8 -10 km and over the equator 16 – 18 km. The temperature at the tropopause can be as high as -40°C over the poles and as low as -80°C over the equator. However, on average the tropopause is at about 11 km where its temperature is -56.5°C."
+  },
+  {
+    "question": "The temperature at 10,000 FT in the International Standard Atmosphere is :",
+    "options": [
+      "-20°C",
+      "-35°C",
+      "-5°C",
+      "0°C"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lapse rate in isa -2°C per 1000 feet of climb And temperature is 15 ° C at msl climbing 10000 feet we reduce -2°C every 1000 feet hence temperature lost is -20°C now add this to 15° C( temperature at msl) result is -5°C"
+  },
+  {
+    "question": "The average height of the tropopause at 50°N is about:",
+    "options": [
+      "14 km",
+      "16 km",
+      "11 km",
+      "8 km"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "In the lower part of the stratosphere the temperature",
+    "options": [
+      "increases with altitude",
+      "increases at first and decreases afterward",
+      "is almost constant",
+      "decreases with altitude"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stratosphere layer of the atmosphere is defined as that layer above the troposphere where the temperature remains constant with an increase in height. temperature shows a gradual increase with height, especially at the top, where the temperature is zero at 50 km. This is due to the absorption of the sun’s ultra violet radiation by the concentration of ozone at higher levels"
+  },
+  {
+    "question": "Which layer of the atmosphere contains more than 90% of all water vapour?",
+    "options": [
+      "Troposphere",
+      "Lower stratosphere",
+      "Upper stratosphere",
+      "Ionosphere"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Most of the weather is due to presence of water vapour, and the troposphere has almost all the weather"
+  },
+  {
+    "question": "In the mid-latitudes the stratosphere extends on an average from:",
+    "options": [
+      "85 to more than 200 km",
+      "11 to 50 km",
+      "0 to 11 km",
+      "50 to 85 km"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The upper boundary to the stratosphere is called the Stratopause. On average the stratosphere layer extends from 11 km to about 50 km."
+  },
+  {
+    "question": "Which one of the following statements applies to the tropopause?",
+    "options": [
+      "It is, by definition, an isothermal layer",
+      "It indicates a strong temperature lapse rate",
+      "It is, by definition, a temperature inversion",
+      "It separates the troposphere from the stratosphere"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "At a certain position, the temperature on the 300 hPa chart is -48°C; according to the tropopause chart, the tropopause is at FL 330. What is the most likely temperature at FL 350?",
+    "options": [
+      "-54°C",
+      "-50°C",
+      "-56°C",
+      "-58°C"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As per isa Temperature should be -56.5°C from 11 km (36,090ft) to 20 km (65,617 ft) but in this hypothetical situation as per the chart 300 hpa corresponds to fl300 and temperature is-48°c as per lapse rate -2° c per 1000 feet at fl330 temp should be -54°C At tropopause temperature is constant with climb hence -54°c"
+  },
+  {
+    "question": "The tropopause is lower",
+    "options": [
+      "south of the equator than north of it",
+      "over the equator than over the South Pole",
+      "over the North Pole than over the equator",
+      "in summer than winter in moderate latitudes"
+    ],
+    "correctAnswer": 2,
+    "explanation": ""
+  },
+  {
+    "question": "What is the most likely temperature at the tropical tropopause?",
+    "options": [
+      "-55°",
+      "-35°",
+      "-25°",
+      "-75°"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The temperature at the tropopause can be as high as -40°C over the poles and as low as -80°C over the equator. As in the diagram the tropics are close to equator, so you can interpolate the answer"
+  },
+  {
+    "question": "Which statement is correct regarding the International Standard Atmosphere?",
+    "options": [
+      "At MSL temperature is 15°C and the decrease in temperature with height is 1°C per 100m",
+      "At MSL temperature is 10°C and the decrease in temperature with height is 1°C per 100m",
+      "At MSL pressure is 1013.25 hPa and the decrease of temperature with height is 1°C per 100m",
+      "At MSL temperature is 15°C and pressure is 1013.25hPa"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The ICAO ISA is defined as follows:- a MSL temperature of 15°C a MSL pressure of 1013.25 hPa a MSL density of 1225 g/m3 a lapse rate of 0.65°C/100m (1.98° C /1000 ft) up to 11 km (36,090 ft) a constant temperature of -56.5°C from 11 km (36,090ft) to 20 km (65,617 ft) an increase of temperature 0.1°C/100m (0.3°C /1000 ft), from 20 km (65,617ft) to 32 km (104,987 ft)"
+  },
+  {
+    "question": "The tropopause is a level at which",
+    "options": [
+      "water vapour content is greatest",
+      "pressure remains constant",
+      "vertical currents are strongest",
+      "temperature ceases to fall with increasing height"
+    ],
+    "correctAnswer": 3,
+    "explanation": ""
+  },
+  {
+    "question": "The 0°C isotherm is forecast to be at FL 50. At what FL would you expect a temperature of -6°C?",
+    "options": [
+      "FL80",
+      "FL20",
+      "FL100",
+      "FL110"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lapse rate is 2°C per 1000 feet of climb if temperature at fl50 is 0°C and you climd 3000 feet that is fl80 you will get -6°C"
+  }
+]

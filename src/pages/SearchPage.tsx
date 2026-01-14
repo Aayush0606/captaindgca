@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { ArrowLeft, Search as SearchIcon, Filter } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -14,8 +14,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { categories } from "@/data/categories";
-import { sampleQuestions } from "@/data/sampleQuestions";
+import { useQuery } from "@tanstack/react-query";
+import { getQuestions, mapQuestionToApp } from "@/services/questionService";
+import { getCategories, mapCategoryToApp } from "@/services/categoryService";
+import { Question, Category } from "@/types/questions";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent } from "@/components/ui/card";
 
 const SearchPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -23,32 +27,38 @@ const SearchPage = () => {
   
   const [query, setQuery] = useState(initialQuery);
   const [categoryFilter, setCategoryFilter] = useState<string>("all");
-  const [difficultyFilter, setDifficultyFilter] = useState<string>("all");
 
+  // Fetch questions from API
+  const { data: questionsData, isLoading: isLoadingQuestions } = useQuery({
+    queryKey: ['searchQuestions', query],
+    queryFn: () => getQuestions({ search: query || undefined }),
+    enabled: true, // Always fetch, even with empty query
+  });
+
+  // Fetch categories for filter
+  const { data: categoriesData } = useQuery({
+    queryKey: ['categories'],
+    queryFn: () => getCategories(),
+  });
+
+  const categories: Category[] = (categoriesData?.data || [])
+    .map((cat) => mapCategoryToApp(cat));
+
+  // Map questions to app format
+  const allQuestions: Question[] = (questionsData?.data || [])
+    .map((q) => mapQuestionToApp(q));
+
+  // Filter questions by category (if a category is selected, we'd need to filter by topic)
+  // For now, category filter is kept but may need topic-based filtering in future
   const filteredQuestions = useMemo(() => {
-    let results = sampleQuestions;
+    let results = allQuestions;
 
-    // Text search
-    if (query.trim()) {
-      const searchTerms = query.toLowerCase().split(" ");
-      results = results.filter((q) => {
-        const searchText = `${q.question} ${q.options.join(" ")} ${q.explanation}`.toLowerCase();
-        return searchTerms.every((term) => searchText.includes(term));
-      });
-    }
-
-    // Category filter
-    if (categoryFilter !== "all") {
-      results = results.filter((q) => q.category === categoryFilter);
-    }
-
-    // Difficulty filter
-    if (difficultyFilter !== "all") {
-      results = results.filter((q) => q.difficulty === difficultyFilter);
-    }
-
+    // Category filter - if implemented, would need to filter by topics in that category
+    // For now, keeping the structure but category filter won't work until topic-category mapping is done
+    // This will be addressed in the topic-category many-to-many implementation
+    
     return results;
-  }, [query, categoryFilter, difficultyFilter]);
+  }, [allQuestions, categoryFilter]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -96,8 +106,14 @@ const SearchPage = () => {
             {/* Filters Row */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
               <p className="text-sm text-muted-foreground">
-                {filteredQuestions.length} question{filteredQuestions.length !== 1 ? "s" : ""} found
-                {query && ` for "${query}"`}
+                {isLoadingQuestions ? (
+                  "Loading..."
+                ) : (
+                  <>
+                    {filteredQuestions.length} question{filteredQuestions.length !== 1 ? "s" : ""} found
+                    {query && ` for "${query}"`}
+                  </>
+                )}
               </p>
               <div className="flex items-center gap-2">
                 <Filter className="h-4 w-4 text-muted-foreground" />
@@ -108,57 +124,45 @@ const SearchPage = () => {
                   <SelectContent>
                     <SelectItem value="all">All Categories</SelectItem>
                     {categories.map((cat) => (
-                      <SelectItem key={cat.id} value={cat.slug}>
+                      <SelectItem key={cat.id} value={cat.id}>
                         {cat.name}
                       </SelectItem>
                     ))}
-                  </SelectContent>
-                </Select>
-                <Select value={difficultyFilter} onValueChange={setDifficultyFilter}>
-                  <SelectTrigger className="w-32">
-                    <SelectValue placeholder="Difficulty" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Levels</SelectItem>
-                    <SelectItem value="easy">Easy</SelectItem>
-                    <SelectItem value="medium">Medium</SelectItem>
-                    <SelectItem value="hard">Hard</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
             </div>
 
             {/* Active Filters */}
-            {(categoryFilter !== "all" || difficultyFilter !== "all") && (
+            {categoryFilter !== "all" && (
               <div className="flex items-center gap-2 mb-6">
                 <span className="text-sm text-muted-foreground">Active filters:</span>
-                {categoryFilter !== "all" && (
-                  <Badge variant="secondary" className="gap-1">
-                    {categories.find((c) => c.slug === categoryFilter)?.name}
-                    <button
-                      onClick={() => setCategoryFilter("all")}
-                      className="ml-1 hover:text-destructive"
-                    >
-                      ×
-                    </button>
-                  </Badge>
-                )}
-                {difficultyFilter !== "all" && (
-                  <Badge variant="secondary" className="gap-1 capitalize">
-                    {difficultyFilter}
-                    <button
-                      onClick={() => setDifficultyFilter("all")}
-                      className="ml-1 hover:text-destructive"
-                    >
-                      ×
-                    </button>
-                  </Badge>
-                )}
+                <Badge variant="secondary" className="gap-1">
+                  {categories.find((c) => c.id === categoryFilter)?.name}
+                  <button
+                    onClick={() => setCategoryFilter("all")}
+                    className="ml-1 hover:text-destructive"
+                  >
+                    ×
+                  </button>
+                </Badge>
               </div>
             )}
 
             {/* Results List */}
-            {filteredQuestions.length > 0 ? (
+            {isLoadingQuestions ? (
+              <div className="space-y-4">
+                {[1, 2, 3].map((i) => (
+                  <Card key={i}>
+                    <CardContent className="p-6">
+                      <Skeleton className="h-6 w-full mb-4" />
+                      <Skeleton className="h-4 w-3/4 mb-2" />
+                      <Skeleton className="h-4 w-1/2" />
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : filteredQuestions.length > 0 ? (
               <div className="space-y-4">
                 {filteredQuestions.map((question, index) => (
                   <QuestionCard key={question.id} question={question} index={index} />
@@ -174,7 +178,6 @@ const SearchPage = () => {
                 <Button variant="outline" onClick={() => {
                   setQuery("");
                   setCategoryFilter("all");
-                  setDifficultyFilter("all");
                 }}>
                   Clear all filters
                 </Button>

@@ -169,7 +169,7 @@
   }
 
   .gradient-aviation {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--sky)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.8) 100%);
   }
 
   .gradient-hero {
